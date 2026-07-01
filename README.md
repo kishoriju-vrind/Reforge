@@ -1,3 +1,3 @@
 # Reforge
 ## Goal
-Document my learning through out during the eklavya 
+Document my learning during the eklavya 
