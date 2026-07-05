@@ -121,7 +121,8 @@ SECOND STAGE:
 - PC executes jump instruction
 - Show output on *SEVEN SEGMENT DISPLAY*
 
-<img src="https://github.com/amrit-reboot/Reforge/blob/Amrit/Docs/Image/Workflow_synapse.png" >
+
+<img src="Docs/Image/Workflow_synapse32.png" >
 
 
 
