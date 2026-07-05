@@ -122,7 +122,10 @@ SECOND STAGE:
 - Show output on *SEVEN SEGMENT DISPLAY*
 
 
-<img src="Docs/Image/Workflow_synapse32.png" >
+<img src="Docs/Image/Workflow_synapse32.png" center width=900 >
+
+----
+
 
 
 
