@@ -126,6 +126,98 @@ SECOND STAGE:
 
 ----
 
+## COMPONENTS OF CPU
+
+Following are the components of RISC-V CPU :
+
+
+1. ### PROGRAM COUNTER
+   Think of it as: The CPU's bookmark.
+   The Program Counter stores the address of the next instruction that needs to be executed.
+   Example:
+   0x0000  ADD
+   0x0004  SUB
+   0x0008  LW
+   Initially
+   ```
+   PC = 0x0000
+   ```
+   After one Instruction
+   ```
+   PC = 0x0004
+   ```
+   After another
+   ```
+   PC = 0x0008
+   ```
+   If a jump or branch occurs, instead of adding 4, the PC jumps to another address.
+   Without the PC, the CPU would never know which instruction comes next.
+
+2. ### INSTRUCTION MEMORY
+    Think of it as: The CPU's library.
+    This module stores the machine code program.
+    In this repo
+    ```
+    instr_mem.v
+    ```
+    contains an array
+    ```verilog
+    reg [31:0] instr_ram [0:MEM_SIZE-1];
+    ```
+    Each location stores one 32-bit RISC-V instruction.
+    When the PC sends an address,
+
+    PC
+
+    ↓
+
+    INSTRUCTION MEMORY
+
+    ↓
+
+    32-bit INSTRUCTION
+  
+    the memory simply returns that instruction.
+    It only stores the program—it never performs calculations.
+  
+3. ### DECODER (Instruction Decoder)
+
+4. ### REGISTER FILE
+
+5. ### IMMEDIATE GENERATOR
+
+6. ### EXECUTION UNIT
+
+7. ### ALU
+
+8. ### MEMORY UNIT
+
+9. ### DATA MEMORY
+
+10. ### WRITE BACK UNIT
+
+11. ### PIPELINE REGISTERS
+
+12. ### HAZARD DETECTION
+
+13. ### FORWARDING UNIT
+
+14. ### CONTROL UNIT
+
+15. ### SEVEN SEGMENT DISPLAY
+
+16. ### TOP MODULE
+
+---
+## How Everything Works Together
+
+   
+   
+  
+
+
+
+
 
 
 
