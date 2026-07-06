@@ -588,6 +588,7 @@ Following are the components of RISC-V CPU :
     The top module is the motherboard of your processor.
 
     It connects everything together:
+    
     <img src="Docs/Image/top_module.png" >
 
     It instantiates
