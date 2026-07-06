@@ -1,3 +1,4 @@
+
 # Synapse-32
 
 Synapse-32 is a 32-bit RISC-V CPU core written in Verilog, supporting RV32I instructions, along with Zicsr and Zifencei extensions.
@@ -181,35 +182,430 @@ Following are the components of RISC-V CPU :
     It only stores the program—it never performs calculations.
   
 3. ### DECODER (Instruction Decoder)
-
+    Think of it as: A translator.
+    The CPU receives a 32-bit binary number like
+    ```
+    00000000010100010000001010110011
+    ```
+    Humans cannot understand this directly.
+    The decoder breaks it into fields:
+    ```
+    opcode
+    rd
+    rs1
+    rs2
+    immediate
+    instruction type
+    ```
+    For example
+    ```
+    ADD x5,x1,x2
+    ```
+    becomes 
+    ```
+    Operation = ADD
+    Read register x1
+    Read register x2
+    Store result in x5
+    ```
+    The decoder tells every other hardware block what needs to happen.
 4. ### REGISTER FILE
-
+    Think of it as: The CPU's working table.
+    Registers are tiny pieces of extremely fast memory inside the CPU.
+    RISC-V has
+    ```32 registers```
+    named
+    ```
+    x0
+    x1 
+    ...
+    x31
+    ```
+    Instead of going to RAM every time,
+    the CPU first checks these registers.
+    Example
+    ```
+    x1 = 20
+    x2 = 30
+    ```
+    For
+    ```
+    ADD x3,x1,x2
+    ```
+    the register file supplies
+    ```
+    20
+    30
+    ```
+    to the ALU.
+    Later,
+    the answer
+    ```50```
+    is written back into x3.
 5. ### IMMEDIATE GENERATOR
-
+    Many instructions contain numbers directly inside them.
+   Example
+   ```
+   ADDI x1,x2,5
+   ```
+   The number
+   ```
+   5
+   ```
+   is not stored in any register.
+   It is extracted from the instruction.
+   Your decoder generates this value as
+   ```
+   imm
+   ```
+   which is sent to the execution unit.
 6. ### EXECUTION UNIT
-
+    This is the brain of the CPU.
+   File:
+   ``` execution_unit.v ```
+   It performs all calculations.
+   Examples
+   ```
+   5 + 7
+   20 - 3
+   A AND B
+   A OR B
+   Shift Left
+   Compare numbers
+   ```
+   It also
+   - calculates memory addresses
+     
+     ```
+     LW x1,8(x2)
+     ```
+     
+     Address
+     
+     ```
+     x2 + 8
+     ```
+     
+     is calculated here.
+     
+   It also
+     
+   - decides branch conditions
+     
+     Example
+     
+     ```
+     BEQ
+     ```
+     
+     Checks
+     
+     ```
+     Are rs1 and rs2 equal?
+     ```
+     
+     If yes
+     
+     ```
+     Jump
+     ```
+     
+     Otherwise
+     ```
+     Continue normally
+     ```
+     
 7. ### ALU
+    Inside the execution unit is the ALU.
 
+    The ALU is the calculator of the processor.
+
+    It performs operations like
+
+    ```
+    Addition
+
+    Subtraction
+
+    Multiplication (if supported)
+
+    AND
+
+    OR
+
+    XOR
+
+    Shift
+
+    Comparison
+    ```
+
+    It does not store data.
+
+    It only produces results.
+   
 8. ### MEMORY UNIT
+    File
 
+    ```
+    memory_unit.v
+    ```
+
+    This block decides
+
+    Should we read memory?
+    
+    or
+    
+    Should we write memory?
+
+    Example
+    For
+    ```
+    LW
+    ```
+    it produces
+
+    ```
+    Read Enable = 1
+    Write Enable = 0
+    ```
+    For
+    ```
+    SW
+    ```
+    it produces
+    ```
+    Read Enable = 0
+    Write Enable = 1
+    ```
+    It also generates
+    ```
+    Address
+    Write Data
+    Byte Enable
+    ```
+    so that the data memory knows exactly what to do.
 9. ### DATA MEMORY
-
+    File
+    ```
+    data_mem.v
+    ```
+    Instruction memory stores the program.
+    
+    Data memory stores variables.
+    
+    Example
+    ```
+    int age = 19;
+    ```
+    is stored here.
+    The CPU can
+    ```
+    Read
+    Write
+    Update
+    ```
+    this memory.
+    Example
+    ```
+    LW
+    ```
+    copies
+    ```
+    Memory
+    ↓
+    Register
+    ```
+    Example
+    ```
+    SW
+    ```
+    copies
+    ```
+    Register
+    ↓
+    Memory
+    
 10. ### WRITE BACK UNIT
+    File
 
+    ```
+    writeback.v
+    ```
+    After computation,
+
+    where should the result go?
+
+    This module answers that.
+
+    Example
+
+    For
+
+    ```
+    ADD
+    ```
+    the ALU result
+
+    ```
+    40
+    ```
+    
+    is written into a register.
+
+    For
+
+    ```
+    LW
+    ```
+    the value coming from memory
+
+    ```
+    100
+    ```
+    is written into the register instead.
+
+    Your code literally does this:
+
+    ```
+    If Load Instruction
+
+    ↓
+
+    Write Memory Data
+
+    Else
+
+    ↓
+
+    Write ALU Result
+    ```
+    This is the last stage of an instruction.
 11. ### PIPELINE REGISTERS
+    Your CPU is pipelined.
 
+    That means several instructions execute simultaneously.
+    Pipeline registers separate stages.
+
+    For example
+
+    ```
+    IF/ID
+    ID/EX
+    EX/MEM
+    MEM/WB
+    ```
+    They temporarily store:
+    - instruction
+    - operands
+    - control signals
+    between stages.
+
+    They are like conveyor belts in a factory.
+    
 12. ### HAZARD DETECTION
+    Sometimes one instruction needs the result of another instruction that hasn't finished yet.
+    Example
+    ```
+    ADD x1,x2,x3
+    SUB x4,x1,x5
+    ```
+    The second instruction needs
+    ```
+    x1
+    ```
+    before the first instruction has written it.
+    Your CPU contains
+    ```
+    load_use_detector
+    ```
+    which detects this problem.
+    It either
+    - stalls the pipeline
+    or
+    - waits one clock cycle
+    to avoid incorrect results.
 
 13. ### FORWARDING UNIT
-
+    Instead of waiting,
+    sometimes the CPU forwards the result directly.
+    Example
+    ```
+    ALU Result
+    ↓
+    Forward
+    ↓
+    Next ALU
+    ```
+    without waiting for register write-back.
+    Your execution unit includes signals like
+    ```
+    forward_a
+    forward_b
+    ```
+    to support this optimization.
+    
 14. ### CONTROL UNIT
-
+    The control unit is the manager of the CPU.
+    It tells every component what to do.
+    Examples
+    ```
+    Use ALU
+    Read Memory
+    Write Memory
+    Jump
+    Branch
+    Write Register
+    ```
+    Without the control unit,
+    all hardware would exist,
+    but nothing would know when to operate.
+    
 15. ### SEVEN SEGMENT DISPLAY
-
+    File
+    ```
+    seven_seg.v
+    ```
+    This module converts binary numbers into patterns that light up a seven-segment display.
+    Example
+    ```
+    Binary
+    1010
+    ```
+    becomes
+    ```
+    A
+    ```
+    The display module converts each 4-bit hexadecimal digit (nibble) into the corresponding seven segment pattern, allowing a full 32-bit value to be shown across eight displays. It's mainly used for debugging and visualizing CPU outputs on hardware.
+    
 16. ### TOP MODULE
+    File
+    ```
+    top.v
+    ```
+
+    The top module is the motherboard of your processor.
+
+    It connects everything together:
+    <img src="Docs/Image/top_module.png" >
+
+    It instantiates
+
+    CPU
+    * Instruction Memory
+    * Data Memory
+    * Timer
+    * UART
+    * Memory mapping
+    * Interrupt handling
+
+    and connects them with wires so the whole processor works as one system.
 
 ---
-## How Everything Works Together
+# How Everything Works Together
+  <img src="Docs/Image/how_works.png" center>
+
 
    
    
