@@ -63,8 +63,9 @@ assembly
 ADD x3, x1, x2
 SUB x4, x3, x5
 
-SUB needs the updated value of `x3`, but `ADD` has not written it back yet.
-**Solution:** Use **Forwarding (Bypassing)** or **stall the pipeline** until the data is available. 
+SUB needs the updated value of `x3` but `ADD` has not written it back yet.
+**Solutions:** Use **Forwarding (Bypassing)** or **stall the pipeline** until the data is available.
+ 
 ---
 #### 3. Control Hazard
 
