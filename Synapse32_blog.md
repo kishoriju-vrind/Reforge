@@ -124,7 +124,7 @@ SECOND STAGE:
 - Show output on *SEVEN SEGMENT DISPLAY*
 
 
-<img src="Docs/Image/Workflow_synapse32.png" center width=900 >
+<img src="Docs/Images/Workflow_synapse32.png" center width=900 >
 
 ----
 
@@ -590,7 +590,7 @@ Following are the components of RISC-V CPU :
 
     It connects everything together:
     
-    <img src="Docs/Image/top_module.png" >
+    <img src="Docs/Images/top_module.png" >
 
     It instantiates
 
@@ -606,7 +606,7 @@ Following are the components of RISC-V CPU :
 
 ---
 # How Everything Works Together
-  <img src="Docs/Image/how_works.png" center>
+  <img src="Docs/Images/how_works.png" center>
 
 
    
