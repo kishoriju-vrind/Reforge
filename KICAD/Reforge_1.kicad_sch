@@ -736,7 +736,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:USB_C_Plug_USB2.0"
+		(symbol "Connector:USB_B_Micro"
 			(pin_names
 				(offset 1.016)
 			)
@@ -745,8 +745,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "P"
-				(at -10.16 19.05 0)
+			(property "Reference" "J"
+				(at -5.08 11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -756,19 +756,19 @@
 					(justify left)
 				)
 			)
-			(property "Value" "USB_C_Plug_USB2.0"
-				(at 12.7 19.05 0)
+			(property "Value" "USB_B_Micro"
+				(at -5.08 8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
-				(at 3.81 0 0)
+				(at 3.81 -1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -778,8 +778,8 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
-				(at 3.81 0 0)
+			(property "Datasheet" ""
+				(at 3.81 -1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -789,7 +789,7 @@
 					)
 				)
 			)
-			(property "Description" "USB 2.0-only Type-C Plug connector"
+			(property "Description" "USB Micro Type B connector"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -800,7 +800,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "usb universal serial bus type-C USB2.0"
+			(property "ki_keywords" "connector USB micro"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -811,7 +811,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "USB*C*Plug*"
+			(property "ki_fp_filters" "USB*Micro*B*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -822,78 +822,10 @@
 					)
 				)
 			)
-			(symbol "USB_C_Plug_USB2.0_0_0"
+			(symbol "USB_B_Micro_0_1"
 				(rectangle
-					(start -0.254 -17.78)
-					(end 0.254 -16.764)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 10.16 15.494)
-					(end 9.144 14.986)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 10.16 10.414)
-					(end 9.144 9.906)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 10.16 7.874)
-					(end 9.144 7.366)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 10.16 2.794)
-					(end 9.144 2.286)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 10.16 -2.286)
-					(end 9.144 -2.794)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "USB_C_Plug_USB2.0_0_1"
-				(rectangle
-					(start -10.16 17.78)
-					(end 10.16 -17.78)
+					(start -5.08 -7.62)
+					(end 5.08 7.62)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -904,113 +836,31 @@
 				)
 				(polyline
 					(pts
-						(xy -8.89 -3.81) (xy -8.89 3.81)
+						(xy -4.699 5.842) (xy -4.699 5.588) (xy -4.445 4.826) (xy -4.445 4.572) (xy -1.651 4.572) (xy -1.651 4.826)
+						(xy -1.397 5.588) (xy -1.397 5.842) (xy -4.699 5.842)
 					)
 					(stroke
-						(width 0.508)
+						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
-					)
-				)
-				(rectangle
-					(start -7.62 -3.81)
-					(end -6.35 3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(arc
-					(start -7.62 3.81)
-					(mid -6.985 4.4423)
-					(end -6.35 3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -7.62 3.81)
-					(mid -6.985 4.4423)
-					(end -6.35 3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(arc
-					(start -8.89 3.81)
-					(mid -6.985 5.7067)
-					(end -5.08 3.81)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -5.08 -3.81)
-					(mid -6.985 -5.7067)
-					(end -8.89 -3.81)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -6.35 -3.81)
-					(mid -6.985 -4.4423)
-					(end -7.62 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -6.35 -3.81)
-					(mid -6.985 -4.4423)
-					(end -7.62 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
 					)
 				)
 				(polyline
 					(pts
-						(xy -5.08 3.81) (xy -5.08 -3.81)
+						(xy -4.318 5.588) (xy -1.778 5.588) (xy -2.032 4.826) (xy -4.064 4.826) (xy -4.318 5.588)
 					)
 					(stroke
-						(width 0.508)
+						(width 0)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
 				(circle
-					(center -2.54 1.143)
+					(center -3.81 2.159)
 					(radius 0.635)
 					(stroke
 						(width 0.254)
@@ -1022,22 +872,22 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 4.318) (xy 0 6.858) (xy 1.27 4.318) (xy -1.27 4.318)
+						(xy -3.175 2.159) (xy -2.54 2.159) (xy -1.27 3.429) (xy -0.635 3.429)
 					)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type outline)
+						(type none)
 					)
 				)
 				(polyline
 					(pts
-						(xy 0 -2.032) (xy 2.54 0.508) (xy 2.54 1.778)
+						(xy -2.54 2.159) (xy -1.905 2.159) (xy -1.27 0.889) (xy 0 0.889)
 					)
 					(stroke
-						(width 0.508)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1046,22 +896,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -3.302) (xy -2.54 -0.762) (xy -2.54 0.508)
+						(xy -1.905 2.159) (xy 0.635 2.159)
 					)
 					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -5.842) (xy 0 4.318)
-					)
-					(stroke
-						(width 0.508)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1069,19 +907,8 @@
 					)
 				)
 				(circle
-					(center 0 -5.842)
-					(radius 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 1.905 1.778)
-					(end 3.175 3.048)
+					(center -0.635 3.429)
+					(radius 0.381)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1090,29 +917,89 @@
 						(type outline)
 					)
 				)
-			)
-			(symbol "USB_C_Plug_USB2.0_1_1"
-				(pin passive line
-					(at 0 -22.86 90)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+				(rectangle
+					(start -0.127 -7.62)
+					(end 0.127 -6.858)
+					(stroke
+						(width 0)
+						(type default)
 					)
-					(number "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(fill
+						(type none)
 					)
 				)
-				(pin passive line
-					(at 15.24 15.24 180)
-					(length 5.08)
+				(rectangle
+					(start 0.254 1.27)
+					(end -0.508 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 2.794) (xy 0.635 1.524) (xy 1.905 2.159) (xy 0.635 2.794)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 5.08 4.953)
+					(end 4.318 5.207)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 -0.127)
+					(end 4.318 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 -2.667)
+					(end 4.318 -2.413)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 -5.207)
+					(end 4.318 -4.953)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "USB_B_Micro_1_1"
+				(pin power_out line
+					(at 7.62 5.08 180)
+					(length 2.54)
 					(name "VBUS"
 						(effects
 							(font
@@ -1120,7 +1007,7 @@
 							)
 						)
 					)
-					(number "A4"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1129,44 +1016,8 @@
 					)
 				)
 				(pin bidirectional line
-					(at 15.24 10.16 180)
-					(length 5.08)
-					(name "CC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 15.24 -2.54 180)
-					(length 5.08)
-					(name "D+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 15.24 2.54 180)
-					(length 5.08)
+					(at 7.62 -2.54 180)
+					(length 2.54)
 					(name "D-"
 						(effects
 							(font
@@ -1174,83 +1025,7 @@
 							)
 						)
 					)
-					(number "A7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 15.24 180)
-					(length 5.08)
-					(hide yes)
-					(name "VBUS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -22.86 90)
-					(length 5.08)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -22.86 90)
-					(length 5.08)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 15.24 180)
-					(length 5.08)
-					(hide yes)
-					(name "VBUS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B4"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1259,35 +1034,16 @@
 					)
 				)
 				(pin bidirectional line
-					(at 15.24 7.62 180)
-					(length 5.08)
-					(name "VCONN"
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "D+"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "B5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 15.24 180)
-					(length 5.08)
-					(hide yes)
-					(name "VBUS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B9"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1296,9 +1052,26 @@
 					)
 				)
 				(pin passive line
-					(at 0 -22.86 90)
-					(length 5.08)
-					(hide yes)
+					(at 7.62 -5.08 180)
+					(length 2.54)
+					(name "ID"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 0 -10.16 90)
+					(length 2.54)
 					(name "GND"
 						(effects
 							(font
@@ -1306,7 +1079,7 @@
 							)
 						)
 					)
-					(number "B12"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1315,9 +1088,9 @@
 					)
 				)
 				(pin passive line
-					(at -7.62 -22.86 90)
-					(length 5.08)
-					(name "SHIELD"
+					(at -2.54 -10.16 90)
+					(length 2.54)
+					(name "Shield"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -9463,8 +9236,8 @@
 		(uuid "6f94c45a-a893-4530-b0e5-a26db3e7c5c9")
 	)
 	(rectangle
-		(start 26.67 231.14)
-		(end 99.06 288.29)
+		(start 26.67 222.25)
+		(end 99.06 279.4)
 		(stroke
 			(width 0)
 			(type solid)
@@ -9476,8 +9249,8 @@
 		(uuid "7851c45e-e013-4e73-b690-e2d3bfc8bf93")
 	)
 	(rectangle
-		(start 21.59 163.83)
-		(end 99.06 228.6)
+		(start 26.67 163.83)
+		(end 99.06 218.44)
 		(stroke
 			(width 0)
 			(type solid)
@@ -9713,7 +9486,7 @@
 	)
 	(text "MICRO-USB"
 		(exclude_from_sim no)
-		(at 61.468 167.132 0)
+		(at 61.722 167.386 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9810,12 +9583,6 @@
 		(uuid "0b131ec5-1d6b-4543-97ee-56b54b328744")
 	)
 	(junction
-		(at 113.03 124.46)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0d2854cf-c15a-48df-9e0c-a2e769fe6bf6")
-	)
-	(junction
 		(at 187.96 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9834,13 +9601,7 @@
 		(uuid "145dbc4b-5c21-4e60-a80e-6a199c33c146")
 	)
 	(junction
-		(at 76.2 190.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "17f4626a-4092-455b-8776-def4ad884421")
-	)
-	(junction
-		(at 53.34 259.08)
+		(at 53.34 250.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "20f2e483-aa47-4c41-80a9-74265ab314c8")
@@ -9912,12 +9673,6 @@
 		(uuid "55697658-b359-42ac-a6e0-45c17c0b3f31")
 	)
 	(junction
-		(at 33.02 220.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "57ecd415-280d-4475-a576-81095ca11348")
-	)
-	(junction
 		(at 127 209.55)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9966,10 +9721,22 @@
 		(uuid "74f5eb03-2b8b-4a02-bfce-9b5f4a292c61")
 	)
 	(junction
-		(at 50.8 278.13)
+		(at 39.37 195.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "771b5147-5b9a-4d10-bc82-5520a2c2d20d")
+	)
+	(junction
+		(at 50.8 269.24)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "77aa0d33-3b15-4a1f-ada7-12e12ce4f835")
+	)
+	(junction
+		(at 76.2 179.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "78aceaaf-89d0-4e68-b7d3-a8a0e8595a4a")
 	)
 	(junction
 		(at 151.13 191.77)
@@ -10098,7 +9865,7 @@
 		(uuid "c2f9c6c7-4620-4491-bc8c-69733e50a445")
 	)
 	(junction
-		(at 68.58 218.44)
+		(at 68.58 207.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cb8a8f4f-b818-451c-8b0e-e668504dd5b5")
@@ -10202,6 +9969,10 @@
 		(uuid "329e2f01-5cb8-4955-8679-9fffdc993827")
 	)
 	(no_connect
+		(at 53.34 189.23)
+		(uuid "43c6d842-da5c-4e11-b3b2-df688aff56d8")
+	)
+	(no_connect
 		(at 173.99 210.82)
 		(uuid "49d6f1f6-f636-44b1-bd07-342302e5b9bc")
 	)
@@ -10284,10 +10055,6 @@
 	(no_connect
 		(at 173.99 259.08)
 		(uuid "dafbef9d-7be2-44b0-b445-aaeabfad92b9")
-	)
-	(no_connect
-		(at 52.07 187.96)
-		(uuid "db63e7b6-0450-47c8-8c85-0ddd680f7882")
 	)
 	(no_connect
 		(at 386.08 224.79)
@@ -10539,7 +10306,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 284.48) (xy 90.17 284.48)
+			(xy 77.47 275.59) (xy 90.17 275.59)
 		)
 		(stroke
 			(width 0)
@@ -10659,6 +10426,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 194.31) (xy 38.1 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11c0fbc4-90c0-4a88-8b53-71465b5b3c0e")
+	)
+	(wire
+		(pts
 			(xy 287.02 234.95) (xy 300.99 234.95)
 		)
 		(stroke
@@ -10666,16 +10443,6 @@
 			(type default)
 		)
 		(uuid "12060a27-31c1-4455-a70b-487321ac71ca")
-	)
-	(wire
-		(pts
-			(xy 52.07 198.12) (xy 60.96 198.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1342a679-345c-4728-8b2e-4ec172e984f2")
 	)
 	(wire
 		(pts
@@ -10739,7 +10506,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 252.73) (xy 90.17 252.73)
+			(xy 77.47 243.84) (xy 90.17 243.84)
 		)
 		(stroke
 			(width 0)
@@ -10789,7 +10556,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 207.01) (xy 68.58 218.44)
+			(xy 68.58 195.58) (xy 68.58 207.01)
 		)
 		(stroke
 			(width 0)
@@ -10826,16 +10593,6 @@
 			(type default)
 		)
 		(uuid "1c4903dc-f8f2-4ad8-8376-06901f557621")
-	)
-	(wire
-		(pts
-			(xy 36.83 218.44) (xy 36.83 220.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d301a1e-3149-4918-bb1d-35cdd6ef05bd")
 	)
 	(wire
 		(pts
@@ -10969,16 +10726,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 119.38) (xy 113.03 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22270f18-3d66-4b78-9b60-6207ee19eb61")
-	)
-	(wire
-		(pts
 			(xy 261.62 87.63) (xy 278.13 87.63)
 		)
 		(stroke
@@ -11029,7 +10776,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 270.51) (xy 77.47 273.05)
+			(xy 77.47 261.62) (xy 77.47 264.16)
 		)
 		(stroke
 			(width 0)
@@ -11039,7 +10786,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 237.49) (xy 57.15 237.49)
+			(xy 41.91 228.6) (xy 57.15 228.6)
 		)
 		(stroke
 			(width 0)
@@ -11319,16 +11066,6 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 220.98) (xy 33.02 220.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3487cef7-e275-4745-8784-e1cb36bd51df")
-	)
-	(wire
-		(pts
 			(xy 304.8 227.33) (xy 304.8 242.57)
 		)
 		(stroke
@@ -11419,7 +11156,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 218.44) (xy 68.58 220.98)
+			(xy 68.58 207.01) (xy 68.58 209.55)
 		)
 		(stroke
 			(width 0)
@@ -11449,7 +11186,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 278.13) (xy 69.85 278.13)
+			(xy 64.77 269.24) (xy 69.85 269.24)
 		)
 		(stroke
 			(width 0)
@@ -11479,7 +11216,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 264.16) (xy 77.47 267.97)
+			(xy 77.47 255.27) (xy 77.47 259.08)
 		)
 		(stroke
 			(width 0)
@@ -11509,7 +11246,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 186.69) (xy 87.63 190.5)
+			(xy 87.63 175.26) (xy 87.63 179.07)
 		)
 		(stroke
 			(width 0)
@@ -11589,6 +11326,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 119.38) (xy 113.03 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41030ccb-d0b0-48b5-a97e-ab5f852b88c3")
+	)
+	(wire
+		(pts
 			(xy 481.33 260.35) (xy 481.33 261.62)
 		)
 		(stroke
@@ -11649,16 +11396,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 124.46) (xy 113.03 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "432a779c-0331-44c4-8ba6-a189a75a645f")
-	)
-	(wire
-		(pts
 			(xy 480.06 283.21) (xy 485.14 283.21)
 		)
 		(stroke
@@ -11679,7 +11416,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 259.08) (xy 53.34 270.51)
+			(xy 53.34 250.19) (xy 53.34 261.62)
 		)
 		(stroke
 			(width 0)
@@ -11899,6 +11636,16 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 195.58) (xy 39.37 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5069f48e-6889-4154-975f-78d5731444d8")
+	)
+	(wire
+		(pts
 			(xy 410.21 256.54) (xy 410.21 259.08)
 		)
 		(stroke
@@ -11939,7 +11686,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 278.13) (xy 50.8 278.13)
+			(xy 57.15 269.24) (xy 50.8 269.24)
 		)
 		(stroke
 			(width 0)
@@ -12029,7 +11776,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 190.5) (xy 87.63 190.5)
+			(xy 86.36 179.07) (xy 87.63 179.07)
 		)
 		(stroke
 			(width 0)
@@ -12109,23 +11856,13 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 259.08) (xy 57.15 259.08)
+			(xy 53.34 250.19) (xy 57.15 250.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5cfb563d-9626-481d-859d-a2123633d152")
-	)
-	(wire
-		(pts
-			(xy 52.07 193.04) (xy 68.58 193.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5dad7aee-be85-467b-a3dd-34afe36058be")
 	)
 	(wire
 		(pts
@@ -12279,7 +12016,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 267.97) (xy 50.8 278.13)
+			(xy 50.8 259.08) (xy 50.8 269.24)
 		)
 		(stroke
 			(width 0)
@@ -12409,16 +12146,6 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 220.98) (xy 33.02 220.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70fecac8-4bb1-4d88-8035-4d7f145989c8")
-	)
-	(wire
-		(pts
 			(xy 279.4 59.69) (xy 288.29 59.69)
 		)
 		(stroke
@@ -12499,6 +12226,16 @@
 	)
 	(wire
 		(pts
+			(xy 40.64 194.31) (xy 40.64 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "778be519-5890-4536-bbba-127573665f5c")
+	)
+	(wire
+		(pts
 			(xy 128.27 53.34) (xy 137.16 53.34)
 		)
 		(stroke
@@ -12519,7 +12256,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 245.11) (xy 57.15 245.11)
+			(xy 41.91 236.22) (xy 57.15 236.22)
 		)
 		(stroke
 			(width 0)
@@ -12566,6 +12303,16 @@
 			(type default)
 		)
 		(uuid "7bb40aa9-2cb1-46cb-b108-e0fe48640fcf")
+	)
+	(wire
+		(pts
+			(xy 38.1 195.58) (xy 39.37 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bd564f7-17d4-4513-a637-aaba0c3527b4")
 	)
 	(wire
 		(pts
@@ -12619,7 +12366,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 254) (xy 77.47 252.73)
+			(xy 77.47 245.11) (xy 77.47 243.84)
 		)
 		(stroke
 			(width 0)
@@ -12669,7 +12416,17 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 190.5) (xy 76.2 199.39)
+			(xy 48.26 179.07) (xy 76.2 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8446fae9-63fc-43b0-9351-d00f8ae3a1ad")
+	)
+	(wire
+		(pts
+			(xy 76.2 179.07) (xy 76.2 187.96)
 		)
 		(stroke
 			(width 0)
@@ -12709,7 +12466,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 207.01) (xy 60.96 218.44)
+			(xy 60.96 195.58) (xy 60.96 207.01)
 		)
 		(stroke
 			(width 0)
@@ -12756,6 +12513,16 @@
 			(type default)
 		)
 		(uuid "8a7913d3-8036-44ec-9bce-1752593f0ecb")
+	)
+	(wire
+		(pts
+			(xy 48.26 189.23) (xy 53.34 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a8cf8bb-125f-48c7-9e60-593152969b64")
 	)
 	(wire
 		(pts
@@ -12859,7 +12626,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 278.13) (xy 50.8 278.13)
+			(xy 41.91 269.24) (xy 50.8 269.24)
 		)
 		(stroke
 			(width 0)
@@ -13009,16 +12776,6 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 218.44) (xy 29.21 220.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c474542-597d-4020-b67a-19d2586a54bc")
-	)
-	(wire
-		(pts
 			(xy 358.14 93.98) (xy 341.63 93.98)
 		)
 		(stroke
@@ -13036,16 +12793,6 @@
 			(type default)
 		)
 		(uuid "9c8d0703-4aa6-479a-bde3-35abc7c911f0")
-	)
-	(wire
-		(pts
-			(xy 76.2 180.34) (xy 76.2 190.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e739e9a-d85a-4716-9ce5-7d6ea3f4acb7")
 	)
 	(wire
 		(pts
@@ -13109,7 +12856,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 237.49) (xy 64.77 237.49)
+			(xy 80.01 228.6) (xy 64.77 228.6)
 		)
 		(stroke
 			(width 0)
@@ -13166,16 +12913,6 @@
 			(type default)
 		)
 		(uuid "a41beb97-3886-4165-a158-2e750708dcfd")
-	)
-	(wire
-		(pts
-			(xy 52.07 184.15) (xy 52.07 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a4f93a8b-e9ce-4a09-ae90-88576c83ba86")
 	)
 	(wire
 		(pts
@@ -13279,16 +13016,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 124.46) (xy 121.92 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ac89d0c8-05f9-4311-b5af-4185940f3941")
-	)
-	(wire
-		(pts
 			(xy 163.83 226.06) (xy 173.99 226.06)
 		)
 		(stroke
@@ -13319,23 +13046,13 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 245.11) (xy 64.77 245.11)
+			(xy 80.01 236.22) (xy 64.77 236.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "aec4fa8d-e501-41b5-84df-2292bdd2d15f")
-	)
-	(wire
-		(pts
-			(xy 52.07 180.34) (xy 76.2 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af9b77ff-fa0c-4837-9c5d-be2e36eec802")
 	)
 	(wire
 		(pts
@@ -13459,7 +13176,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 259.08) (xy 69.85 259.08)
+			(xy 64.77 250.19) (xy 69.85 250.19)
 		)
 		(stroke
 			(width 0)
@@ -13469,7 +13186,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 193.04) (xy 68.58 199.39)
+			(xy 68.58 184.15) (xy 68.58 187.96)
 		)
 		(stroke
 			(width 0)
@@ -13649,6 +13366,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 184.15) (xy 68.58 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c233a926-fe8b-48ab-b08f-3742e5785120")
+	)
+	(wire
+		(pts
 			(xy 529.59 256.54) (xy 547.37 256.54)
 		)
 		(stroke
@@ -13669,7 +13396,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 207.01) (xy 76.2 218.44)
+			(xy 76.2 195.58) (xy 76.2 207.01)
 		)
 		(stroke
 			(width 0)
@@ -13679,7 +13406,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 267.97) (xy 50.8 267.97)
+			(xy 77.47 259.08) (xy 50.8 259.08)
 		)
 		(stroke
 			(width 0)
@@ -13859,7 +13586,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 270.51) (xy 77.47 270.51)
+			(xy 53.34 261.62) (xy 77.47 261.62)
 		)
 		(stroke
 			(width 0)
@@ -13869,7 +13596,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 259.08) (xy 53.34 259.08)
+			(xy 41.91 250.19) (xy 53.34 250.19)
 		)
 		(stroke
 			(width 0)
@@ -13956,6 +13683,16 @@
 			(type default)
 		)
 		(uuid "d4874088-48c7-4c0c-95e2-ff634a590108")
+	)
+	(wire
+		(pts
+			(xy 48.26 186.69) (xy 60.96 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d58e6c0b-39ad-4839-959a-69710e107f8e")
 	)
 	(wire
 		(pts
@@ -14046,6 +13783,16 @@
 			(type default)
 		)
 		(uuid "d932dc6d-8e5d-4f31-b168-647d5668cb5b")
+	)
+	(wire
+		(pts
+			(xy 39.37 195.58) (xy 40.64 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d98c0c2d-47bf-4f6c-aae5-31dc3d73bf98")
 	)
 	(wire
 		(pts
@@ -14189,7 +13936,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 218.44) (xy 68.58 218.44)
+			(xy 60.96 207.01) (xy 68.58 207.01)
 		)
 		(stroke
 			(width 0)
@@ -14259,7 +14006,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 218.44) (xy 68.58 218.44)
+			(xy 76.2 207.01) (xy 68.58 207.01)
 		)
 		(stroke
 			(width 0)
@@ -14539,7 +14286,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 198.12) (xy 60.96 199.39)
+			(xy 60.96 186.69) (xy 60.96 187.96)
 		)
 		(stroke
 			(width 0)
@@ -14599,7 +14346,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 190.5) (xy 78.74 190.5)
+			(xy 76.2 179.07) (xy 78.74 179.07)
 		)
 		(stroke
 			(width 0)
@@ -14729,7 +14476,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 283.21) (xy 77.47 284.48)
+			(xy 77.47 274.32) (xy 77.47 275.59)
 		)
 		(stroke
 			(width 0)
@@ -15098,7 +14845,7 @@
 		(uuid "2a0f09bc-ecd9-43c6-9f07-c2b131e86e69")
 	)
 	(label "RXD"
-		(at 80.01 237.49 180)
+		(at 80.01 228.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15118,7 +14865,7 @@
 		(uuid "2a2529ad-94b0-4602-8e62-a0cf00b70a39")
 	)
 	(label "TXD"
-		(at 80.01 245.11 180)
+		(at 80.01 236.22 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15448,7 +15195,7 @@
 		(uuid "43ceb2e0-0f4d-4e15-ab19-ca6a798b6f3f")
 	)
 	(label "TXD0"
-		(at 41.91 237.49 0)
+		(at 41.91 228.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15498,7 +15245,7 @@
 		(uuid "4a2c4875-ba46-4005-9370-0a4df70ae7ae")
 	)
 	(label "VBUS"
-		(at 73.66 180.34 180)
+		(at 73.66 179.07 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15518,7 +15265,7 @@
 		(uuid "4afc6424-bef4-40a3-9c85-cfce46c205e2")
 	)
 	(label "~{RTS}"
-		(at 41.91 278.13 0)
+		(at 41.91 269.24 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15538,7 +15285,7 @@
 		(uuid "4be7148c-5673-4c4d-86cc-f122ba5d5c15")
 	)
 	(label "EN"
-		(at 90.17 252.73 180)
+		(at 90.17 243.84 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15717,16 +15464,6 @@
 		)
 		(uuid "60f95574-3a40-4320-90d5-1acc70bc0df0")
 	)
-	(label "USB_DP"
-		(at 60.96 198.12 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "62816cba-a552-4a68-a7e7-031cdcd9d082")
-	)
 	(label "IOB_24A"
 		(at 341.63 93.98 0)
 		(effects
@@ -15796,6 +15533,16 @@
 			(justify left bottom)
 		)
 		(uuid "718edf12-f100-4076-9922-53f1149638a7")
+	)
+	(label "USB_DP"
+		(at 68.58 184.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "71ddc2e4-903f-4781-986f-13bc931eacdc")
 	)
 	(label "IO13"
 		(at 137.16 71.12 180)
@@ -16048,7 +15795,7 @@
 		(uuid "8eae8c42-38c2-47a1-8736-3bd31ffe9231")
 	)
 	(label "EXT_5V"
-		(at 87.63 186.69 180)
+		(at 87.63 175.26 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16148,7 +15895,7 @@
 		(uuid "9dd52701-3fd8-4541-83a1-aa14308c4f37")
 	)
 	(label "~{DTR}"
-		(at 41.91 259.08 0)
+		(at 41.91 250.19 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16678,7 +16425,7 @@
 		(uuid "d7b2e0cf-5913-4855-bb33-84ac122f6af0")
 	)
 	(label "RXD0"
-		(at 41.91 245.11 0)
+		(at 41.91 236.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16738,7 +16485,7 @@
 		(uuid "dba087ce-eb4a-4d87-9a89-f5facd2d798b")
 	)
 	(label "IO0"
-		(at 90.17 284.48 180)
+		(at 90.17 275.59 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16887,16 +16634,6 @@
 		)
 		(uuid "f91002a5-4c9e-4bb0-ad09-5432973d7a7e")
 	)
-	(label "USB_DN"
-		(at 68.58 193.04 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f9c1e2ec-9af4-40ee-a706-72f7c58cfd2c")
-	)
 	(label "FT_SSn"
 		(at 341.63 111.76 0)
 		(effects
@@ -16906,6 +16643,16 @@
 			(justify left bottom)
 		)
 		(uuid "fa3c3e83-5aad-4b73-95c5-25c8f60dbca0")
+	)
+	(label "USB_DN"
+		(at 60.96 186.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fa9780ee-cb42-4112-bb8f-023f54a748e1")
 	)
 	(label "IO27"
 		(at 257.81 252.73 180)
@@ -17067,7 +16814,7 @@
 			(uuid "2d036430-03e8-48ca-8686-288b6573af46")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR037")
 					(unit 1)
@@ -17107,7 +16854,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_RGB_Wuerth-PLCC4_3.2x2.8mm_150141M173100"
 			(at 513.08 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -17153,7 +16900,7 @@
 			(uuid "a4b35e2d-bd64-4a99-a517-c7cf490017b1")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "D2")
 					(unit 1)
@@ -17194,7 +16941,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm"
 			(at 442.722 62.23 90)
 			(hide yes)
 			(show_name no)
@@ -17234,7 +16981,7 @@
 			(uuid "1698a0a8-2f35-4459-9790-e843e428b84e")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "SJ20")
 					(unit 1)
@@ -17273,7 +17020,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 552.45 44.958 90)
 			(hide yes)
 			(show_name no)
@@ -17313,7 +17060,7 @@
 			(uuid "b652b909-6fdd-4661-aa5f-f361db46aeda")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "R12")
 					(unit 1)
@@ -17391,7 +17138,7 @@
 			(uuid "6d182293-cba8-43c8-9c49-e4126d289924")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR03")
 					(unit 1)
@@ -17432,7 +17179,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm"
 			(at 286.512 54.61 90)
 			(hide yes)
 			(show_name no)
@@ -17472,7 +17219,7 @@
 			(uuid "b9f72852-1913-4909-8fad-b8aee7448aa6")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "SJ31")
 					(unit 1)
@@ -17549,7 +17296,7 @@
 			(uuid "c59702c4-3105-48c7-8965-9ecb751d8546")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#FLG04")
 					(unit 1)
@@ -17590,7 +17337,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 392.1252 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -17630,7 +17377,7 @@
 			(uuid "72a2c8f5-04bc-47e3-868a-4d25341876dd")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C15")
 					(unit 1)
@@ -17673,7 +17420,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x19_P2.54mm_Horizontal"
 			(at 281.94 250.19 0)
 			(hide yes)
 			(show_name no)
@@ -17764,7 +17511,7 @@
 			(uuid "2e3e3e5a-486d-4005-b73e-ff141b0653fc")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "J2")
 					(unit 1)
@@ -17806,7 +17553,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 409.2448 266.7 0)
 			(hide yes)
 			(show_name no)
@@ -17846,7 +17593,7 @@
 			(uuid "6f572e5f-e493-4737-9c3e-1e732ffe9f5a")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C25")
 					(unit 1)
@@ -17931,7 +17678,7 @@
 			(uuid "b609681d-6891-4851-88dd-c5b91dc3df0d")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "Y1")
 					(unit 1)
@@ -17972,7 +17719,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 501.3452 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -18012,7 +17759,7 @@
 			(uuid "0df07997-62dd-4601-82c6-7d1ac71d0036")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C28")
 					(unit 1)
@@ -18090,7 +17837,7 @@
 			(uuid "09450ea5-fc39-4d3a-9cd9-a73aaec23fc9")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR017")
 					(unit 1)
@@ -18167,7 +17914,7 @@
 			(uuid "ac90f85a-1d3a-4d22-90f5-b71c9142118f")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR038")
 					(unit 1)
@@ -18207,7 +17954,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 482.6 209.042 90)
 			(hide yes)
 			(show_name no)
@@ -18247,7 +17994,7 @@
 			(uuid "177454db-bc06-4e88-935d-b3b28e3f66a2")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "R23")
 					(unit 1)
@@ -18290,7 +18037,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 395.478 260.35 90)
 			(hide yes)
 			(show_name no)
@@ -18330,7 +18077,7 @@
 			(uuid "0fee86cf-9485-4072-9618-82b44d431440")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "R17")
 					(unit 1)
@@ -18408,7 +18155,7 @@
 			(uuid "04a858b3-bc96-4ecd-9cfa-9c2483895956")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR05")
 					(unit 1)
@@ -18418,7 +18165,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_TVS_Filled")
-		(at 60.96 203.2 90)
+		(at 60.96 191.77 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18428,7 +18175,7 @@
 		(dnp no)
 		(uuid "1ca01b5a-8e87-4789-a582-be77ede35fe0")
 		(property "Reference" "D3"
-			(at 56.642 203.2 90)
+			(at 56.642 191.77 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18439,7 +18186,7 @@
 			)
 		)
 		(property "Value" "D_TVS_Filled"
-			(at 59.944 205.994 0)
+			(at 59.944 194.564 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18449,8 +18196,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 60.96 203.2 0)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 60.96 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18461,7 +18208,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 203.2 0)
+			(at 60.96 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18472,7 +18219,7 @@
 			)
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode, filled shape"
-			(at 60.96 203.2 0)
+			(at 60.96 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18489,7 +18236,7 @@
 			(uuid "871ed07d-7a51-46b7-b1d3-a6657f667c70")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "D3")
 					(unit 1)
@@ -18533,7 +18280,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 135.89 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -18570,7 +18317,7 @@
 			(uuid "7667ee99-2bfa-4018-b8f4-1539eed34002")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "TP1")
 					(unit 1)
@@ -18658,7 +18405,7 @@
 			(uuid "7846a182-1baf-46bd-81d1-345d9e45150d")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "U7")
 					(unit 1)
@@ -18697,7 +18444,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 250.19 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -18737,122 +18484,9 @@
 			(uuid "4179d854-6e96-47f1-b1a1-aedebea1b2b9")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:USB_C_Plug_USB2.0")
-		(at 36.83 195.58 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "20256392-f18d-4113-bd93-1dbf0b48f779")
-		(property "Reference" "P1"
-			(at 36.83 172.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "USB_C_Plug_USB2.0"
-			(at 36.83 175.26 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 40.64 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
-			(at 40.64 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "USB 2.0-only Type-C Plug connector"
-			(at 36.83 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "A9"
-			(uuid "da5edabf-955d-4313-b7b9-26e2ea417deb")
-		)
-		(pin "A6"
-			(uuid "0908fe48-2439-4514-b4b9-9e7b1c1a1558")
-		)
-		(pin "A5"
-			(uuid "51179c9f-86de-405d-b734-b2ae00c5d59d")
-		)
-		(pin "A12"
-			(uuid "76cbd612-1410-4115-a497-9c3941c784df")
-		)
-		(pin "B1"
-			(uuid "ea7ff807-2eb5-48e3-80ff-16bf7a009a7d")
-		)
-		(pin "B4"
-			(uuid "b24eed21-00c7-4d63-8e7c-61ec6bb9b1eb")
-		)
-		(pin "B9"
-			(uuid "aaf22db4-485d-4251-b1eb-40ee5cace508")
-		)
-		(pin "A7"
-			(uuid "64c3ac7f-029e-40f3-8342-35a51f9d3c18")
-		)
-		(pin "B12"
-			(uuid "cc436f19-29b8-4598-adcc-ad6e44b90753")
-		)
-		(pin "A1"
-			(uuid "8812ab87-f8a6-451a-ac39-9331bc779c77")
-		)
-		(pin "B5"
-			(uuid "1692906b-6287-4b6d-b7fc-9d1df0c6a38f")
-		)
-		(pin "A4"
-			(uuid "53c586a0-bdfd-473f-a4ee-e3f49f759288")
-		)
-		(pin "SH"
-			(uuid "b76fe23f-5eab-40d7-8f2c-1c85ca4fc7f8")
-		)
-		(instances
-			(project "Reforge_1"
-				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
-					(reference "P1")
 					(unit 1)
 				)
 			)
@@ -18927,7 +18561,7 @@
 			(uuid "ea5d6a22-385b-4f7d-a6b2-ad46aec7a272")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#FLG06")
 					(unit 1)
@@ -18968,7 +18602,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
 			(at 422.91 172.212 90)
 			(hide yes)
 			(show_name no)
@@ -19008,7 +18642,7 @@
 			(uuid "b6651f92-a610-4124-af96-9fbb30f54f0d")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "SJ27")
 					(unit 1)
@@ -19047,7 +18681,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 190.5 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -19087,7 +18721,7 @@
 			(uuid "520f5de7-f491-41d9-8cf6-4c6c2037b7f4")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C4")
 					(unit 1)
@@ -19097,7 +18731,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 60.96 259.08 90)
+		(at 60.96 250.19 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19107,7 +18741,7 @@
 		(dnp no)
 		(uuid "25368c44-cbd7-4261-b4bd-a9251b43b5a5")
 		(property "Reference" "R9"
-			(at 57.15 258.064 90)
+			(at 57.15 249.174 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19117,7 +18751,7 @@
 			)
 		)
 		(property "Value" "10R(5%)"
-			(at 66.294 257.81 90)
+			(at 66.294 248.92 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19126,8 +18760,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 61.214 258.064 90)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 61.214 249.174 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19138,7 +18772,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 259.08 0)
+			(at 60.96 250.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19149,7 +18783,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 60.96 259.08 0)
+			(at 60.96 250.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19166,7 +18800,7 @@
 			(uuid "6a822f1c-fb2f-4122-b749-a16fed52dc94")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "R9")
 					(unit 1)
@@ -19243,7 +18877,7 @@
 			(uuid "0a8d9be5-7ede-400e-8374-9b94f180feba")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR034")
 					(unit 1)
@@ -19284,7 +18918,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 516.5852 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -19324,7 +18958,7 @@
 			(uuid "6574230e-1df4-4fe0-8eaf-d45f3b0345f5")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C20")
 					(unit 1)
@@ -19401,7 +19035,7 @@
 			(uuid "66183bbc-078f-4621-ab31-9f4ce6a44702")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR014")
 					(unit 1)
@@ -19440,7 +19074,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
 			(at 411.48 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -19516,7 +19150,7 @@
 			(uuid "19080a4c-433e-4dc8-b69b-78eb375463d1")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "U6")
 					(unit 1)
@@ -19593,7 +19227,7 @@
 			(uuid "93c9273d-ce55-4028-9921-bdd85521f394")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR013")
 					(unit 1)
@@ -19671,7 +19305,7 @@
 			(uuid "a65f0cbb-fda9-4ef6-9bf7-d550d74d93f2")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR056")
 					(unit 1)
@@ -19710,7 +19344,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 558.038 105.41 90)
 			(hide yes)
 			(show_name no)
@@ -19750,7 +19384,7 @@
 			(uuid "1c63d094-52ea-4b22-a67c-1abbf82f476b")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "R15")
 					(unit 1)
@@ -19791,7 +19425,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 473.202 203.2 90)
 			(hide yes)
 			(show_name no)
@@ -19831,7 +19465,7 @@
 			(uuid "12b2d72a-f85b-412f-84b8-b129ed3ea5bf")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "R20")
 					(unit 1)
@@ -19875,7 +19509,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 153.67 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -19912,7 +19546,7 @@
 			(uuid "8ac43d7a-d08f-42bd-964f-02d519cd5e82")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "TP2")
 					(unit 1)
@@ -19952,7 +19586,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_B3U-1000P"
 			(at 250.19 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -19992,7 +19626,7 @@
 			(uuid "6ea386cc-7d5f-458a-bd0c-5ad2c31ab556")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "SW1")
 					(unit 1)
@@ -20069,7 +19703,7 @@
 			(uuid "3d6278e2-03a2-4514-aa13-60837024c755")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR032")
 					(unit 1)
@@ -20108,7 +19742,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 371.348 193.04 90)
 			(hide yes)
 			(show_name no)
@@ -20148,7 +19782,7 @@
 			(uuid "961d4be5-8ab2-466a-a3af-2b700d55b0e7")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "R14")
 					(unit 1)
@@ -20226,7 +19860,7 @@
 			(uuid "6473aab1-9867-4ce3-a4e3-f79fbcea7454")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR024")
 					(unit 1)
@@ -20303,7 +19937,7 @@
 			(uuid "918c148f-d165-4fe0-b310-6f64b88233b0")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR022")
 					(unit 1)
@@ -20346,7 +19980,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x19_P2.54mm_Horizontal"
 			(at 238.76 250.19 0)
 			(hide yes)
 			(show_name no)
@@ -20437,7 +20071,7 @@
 			(uuid "8423f22c-aff8-4985-aaf4-7bcfba7fc1db")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "J8")
 					(unit 1)
@@ -20478,7 +20112,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 169.926 61.214 90)
 			(hide yes)
 			(show_name no)
@@ -20518,7 +20152,7 @@
 			(uuid "cb29fce0-cbfc-4445-9f3d-739cc424d827")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "R2")
 					(unit 1)
@@ -20558,7 +20192,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
 			(at 393.7 224.79 0)
 			(hide yes)
 			(show_name no)
@@ -20634,7 +20268,7 @@
 			(uuid "570d862d-6c41-49c9-97f5-0342df554256")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "U6")
 					(unit 4)
@@ -20673,7 +20307,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 222.25 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -20713,7 +20347,7 @@
 			(uuid "4c719ac1-d951-43c9-8df1-bc58a70130ec")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C5")
 					(unit 1)
@@ -20754,7 +20388,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
 			(at 414.02 280.162 90)
 			(hide yes)
 			(show_name no)
@@ -20794,7 +20428,7 @@
 			(uuid "a6b3b312-c6ca-4817-a405-0e3a2e3a5d8e")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "SJ29")
 					(unit 1)
@@ -20835,7 +20469,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 553.4152 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -20875,7 +20509,7 @@
 			(uuid "003910f7-514b-4277-bfff-50ba11d71d37")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C18")
 					(unit 1)
@@ -20914,7 +20548,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 482.6 193.802 90)
 			(hide yes)
 			(show_name no)
@@ -20954,7 +20588,7 @@
 			(uuid "925ad3a8-56ac-4b35-862e-413ff3a91faf")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "R21")
 					(unit 1)
@@ -20995,7 +20629,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 491.1852 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -21035,7 +20669,7 @@
 			(uuid "f55d271c-b0d9-4e5c-addc-3c790cd24d50")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C27")
 					(unit 1)
@@ -21076,7 +20710,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 482.2952 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -21116,7 +20750,7 @@
 			(uuid "97598039-2bd5-451a-b3d5-168afde7d5bb")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C26")
 					(unit 1)
@@ -21126,7 +20760,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 68.58 220.98 0)
+		(at 68.58 209.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21136,7 +20770,7 @@
 		(dnp no)
 		(uuid "515da620-3d3f-4ad0-ae9c-8a6624aac23e")
 		(property "Reference" "#PWR011"
-			(at 68.58 227.33 0)
+			(at 68.58 215.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21147,7 +20781,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 68.58 225.298 0)
+			(at 68.58 213.868 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21157,7 +20791,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 68.58 220.98 0)
+			(at 68.58 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21168,7 +20802,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 68.58 220.98 0)
+			(at 68.58 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21179,7 +20813,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 68.58 220.98 0)
+			(at 68.58 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21193,7 +20827,7 @@
 			(uuid "1992b57f-28ea-4cb1-94b0-d4fbebd0820c")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR011")
 					(unit 1)
@@ -21235,7 +20869,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 222.25 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -21275,7 +20909,7 @@
 			(uuid "e6cd7f11-5d36-4826-b55d-dfcf6f18d8a6")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C7")
 					(unit 1)
@@ -21316,7 +20950,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 488.442 203.2 90)
 			(hide yes)
 			(show_name no)
@@ -21356,7 +20990,7 @@
 			(uuid "dc82fc05-3a07-4cc0-9859-13ee3c44d0e1")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "R22")
 					(unit 1)
@@ -21445,7 +21079,7 @@
 			(uuid "f22c9a32-274f-4707-b1ed-3e49a6494525")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "U5")
 					(unit 1)
@@ -21486,7 +21120,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 563.5752 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -21526,7 +21160,7 @@
 			(uuid "4f8c214f-144d-4c7b-8718-b70d7c73cda1")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C19")
 					(unit 1)
@@ -21567,7 +21201,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 459.4352 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -21607,7 +21241,7 @@
 			(uuid "7d1ae980-5524-4843-800e-fbc7b6ed46d9")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C17")
 					(unit 1)
@@ -21648,7 +21282,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 312.1152 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -21688,7 +21322,7 @@
 			(uuid "8f1371bc-5f2c-4c17-8058-2378b1deaefb")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C13")
 					(unit 1)
@@ -21730,7 +21364,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 168.91 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -21781,7 +21415,7 @@
 			(uuid "55ef33a4-416f-455f-946e-40cb7cb00162")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "PWR_LED1")
 					(unit 1)
@@ -21859,7 +21493,7 @@
 			(uuid "cc723d4b-025f-4dc3-b84c-f205f428ef72")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR030")
 					(unit 1)
@@ -21936,7 +21570,7 @@
 			(uuid "140a34f7-6dd6-4db8-b5d5-57a6ed201b5d")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#FLG07")
 					(unit 1)
@@ -21978,7 +21612,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 49.53 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -22018,7 +21652,7 @@
 			(uuid "ec6f3c3d-9f7f-4c31-ba65-f47e35894201")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C3")
 					(unit 1)
@@ -22096,7 +21730,7 @@
 			(uuid "ee152841-3c64-49e3-b41d-dc563ed35a17")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#FLG02")
 					(unit 1)
@@ -22174,7 +21808,7 @@
 			(uuid "3199c17a-14b6-48f3-bc6f-0b5ea8ebe973")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR06")
 					(unit 1)
@@ -22252,7 +21886,7 @@
 			(uuid "1a8c7720-1a74-4f0b-8d1b-989065722da3")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR04")
 					(unit 1)
@@ -22353,87 +21987,9 @@
 			(uuid "3470b451-6786-48c8-a70a-774e75256512")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "U8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 33.02 220.98 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "63d0856f-0db8-49ff-811c-f12bd0c60937")
-		(property "Reference" "#PWR010"
-			(at 33.02 227.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 33.02 226.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 33.02 220.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 33.02 220.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 33.02 220.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a2e65507-8315-4b6a-b448-d3f1552f8cbb")
-		)
-		(instances
-			(project "Reforge_1"
-				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
-					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -22473,7 +22029,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 49.53 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -22513,7 +22069,7 @@
 			(uuid "4fe102b5-4be4-4b12-93a4-534a23c27739")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "R1")
 					(unit 1)
@@ -22591,7 +22147,7 @@
 			(uuid "a4c69db8-a970-4494-bd47-40e6660732b0")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR01")
 					(unit 1)
@@ -22668,7 +22224,7 @@
 			(uuid "befb8a47-b716-4655-a1f4-ad9b842a058d")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR035")
 					(unit 1)
@@ -22678,7 +22234,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_TVS_Filled")
-		(at 76.2 203.2 90)
+		(at 76.2 191.77 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22688,7 +22244,7 @@
 		(dnp no)
 		(uuid "69e7b03e-9693-4176-8e6d-2e7ce8b67369")
 		(property "Reference" "D4"
-			(at 72.136 203.2 90)
+			(at 72.136 191.77 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22699,7 +22255,7 @@
 			)
 		)
 		(property "Value" "D_TVS_Filled"
-			(at 75.184 205.994 0)
+			(at 75.184 194.564 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22709,8 +22265,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 76.2 203.2 0)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 76.2 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22721,7 +22277,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 203.2 0)
+			(at 76.2 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22732,7 +22288,7 @@
 			)
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode, filled shape"
-			(at 76.2 203.2 0)
+			(at 76.2 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22749,7 +22305,7 @@
 			(uuid "b95b06dd-ee2c-48b9-913b-328fee4745e2")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "D4")
 					(unit 1)
@@ -22790,7 +22346,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 369.2652 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -22830,7 +22386,7 @@
 			(uuid "74d19af4-44fa-4e51-86e5-dbdc4b0616bf")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C24")
 					(unit 1)
@@ -22869,7 +22425,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
 			(at 502.158 106.68 90)
 			(hide yes)
 			(show_name no)
@@ -22909,7 +22465,7 @@
 			(uuid "25686290-e4f7-4b80-8553-34815b541b4c")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "R13")
 					(unit 1)
@@ -22988,9 +22544,88 @@
 			(uuid "2ecf4018-ec21-4b69-908d-71dd1b788227")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR042")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 39.37 196.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e66180a-0989-4309-bb6e-f0d84d5e86c4")
+		(property "Reference" "#PWR010"
+			(at 39.37 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 41.91 198.1199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 39.37 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "626200c1-ac99-4acf-a67d-bb0e1123ec6f")
+		)
+		(instances
+			(project "Reforge_1 (2)"
+				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -23209,7 +22844,7 @@
 			(uuid "d7b229e1-05bc-41c7-ab90-ae65e771ddc1")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "U3")
 					(unit 4)
@@ -23252,7 +22887,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 404.368 260.35 90)
 			(hide yes)
 			(show_name no)
@@ -23292,7 +22927,7 @@
 			(uuid "1f626d16-d1f3-435c-b991-f02e470106f7")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "R16")
 					(unit 1)
@@ -23369,7 +23004,7 @@
 			(uuid "afb46bc9-70af-460f-9e9d-3c90ca1e7f2e")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR015")
 					(unit 1)
@@ -23379,7 +23014,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 60.96 278.13 90)
+		(at 60.96 269.24 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -23389,7 +23024,7 @@
 		(dnp no)
 		(uuid "822a09cb-8f2b-488a-969c-1ebc604181bc")
 		(property "Reference" "R10"
-			(at 57.15 277.114 90)
+			(at 57.15 268.224 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23399,7 +23034,7 @@
 			)
 		)
 		(property "Value" "10R(5%)"
-			(at 66.294 276.86 90)
+			(at 66.294 267.97 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23408,8 +23043,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 61.214 277.114 90)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 61.214 268.224 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23420,7 +23055,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 278.13 0)
+			(at 60.96 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23431,7 +23066,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 60.96 278.13 0)
+			(at 60.96 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23448,7 +23083,7 @@
 			(uuid "9ba9d820-9151-464a-b2c4-8db36e8b40cf")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "R10")
 					(unit 1)
@@ -23525,7 +23160,7 @@
 			(uuid "2aa7f5ce-64b3-4c29-8b0e-05d0df2d0234")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR09")
 					(unit 1)
@@ -23535,7 +23170,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_BJT:SS8050")
-		(at 74.93 278.13 0)
+		(at 74.93 269.24 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -23546,7 +23181,7 @@
 		(fields_autoplaced yes)
 		(uuid "8373b8e4-0f07-47c9-a853-3df70de928cf")
 		(property "Reference" "Q2"
-			(at 80.01 276.8599 0)
+			(at 80.01 267.9699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23557,7 +23192,7 @@
 			)
 		)
 		(property "Value" "SS8050"
-			(at 80.01 279.3999 0)
+			(at 80.01 270.5099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23568,7 +23203,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 80.01 285.496 0)
+			(at 80.01 276.606 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23581,7 +23216,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.secosgmbh.com/datasheet/products/SSMPTransistor/SOT-23/SS8050.pdf"
-			(at 80.01 282.956 0)
+			(at 80.01 274.066 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23593,7 +23228,7 @@
 			)
 		)
 		(property "Description" "General Purpose NPN Transistor, 1.5A Ic, 25V Vce, SOT-23"
-			(at 108.966 280.416 0)
+			(at 108.966 271.526 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23604,7 +23239,7 @@
 			)
 		)
 		(property "Sim.Device" "NPN"
-			(at 74.93 278.13 0)
+			(at 74.93 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23615,7 +23250,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=B 2=E 3=C"
-			(at 74.93 278.13 0)
+			(at 74.93 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23635,7 +23270,7 @@
 			(uuid "a98fefcf-c0f6-416c-8f4d-8fdf64b23cdd")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "Q2")
 					(unit 1)
@@ -23714,7 +23349,7 @@
 			(uuid "2d05f210-5afa-4fcd-b738-0fe79052c4f4")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR043")
 					(unit 1)
@@ -23755,7 +23390,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
 			(at 456.692 62.23 90)
 			(hide yes)
 			(show_name no)
@@ -23795,7 +23430,7 @@
 			(uuid "a240a159-d48a-4e78-b6fc-ff7805462868")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "SJ26")
 					(unit 1)
@@ -23835,7 +23470,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
 			(at 353.06 224.79 0)
 			(hide yes)
 			(show_name no)
@@ -23911,7 +23546,7 @@
 			(uuid "570d862d-6c41-49c9-97f5-0342df554257")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "U6")
 					(unit 2)
@@ -23953,7 +23588,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x24_P2.54mm_Horizontal"
 			(at 552.45 269.24 0)
 			(hide yes)
 			(show_name no)
@@ -24059,7 +23694,7 @@
 			(uuid "8d69476f-4e65-4577-9714-fcca1a6c434a")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "J5")
 					(unit 1)
@@ -24161,7 +23796,7 @@
 			(uuid "9c6429e7-d0a6-45bf-b6e9-175d23356221")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "D1")
 					(unit 1)
@@ -24202,7 +23837,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 501.3452 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -24242,7 +23877,7 @@
 			(uuid "e133cadd-a873-42f5-94ed-a520618cfb7d")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C23")
 					(unit 1)
@@ -24426,7 +24061,7 @@
 			(uuid "2e654024-8983-471b-a228-f48e9a9a4488")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "U1")
 					(unit 1)
@@ -24504,7 +24139,7 @@
 			(uuid "90da7aab-f227-4029-83f8-650f88d590ea")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#FLG01")
 					(unit 1)
@@ -24582,7 +24217,7 @@
 			(uuid "b8b4d96c-52dd-40f5-acc3-a7e0b119b04b")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR054")
 					(unit 1)
@@ -24804,7 +24439,7 @@
 			(uuid "d7b229e1-05bc-41c7-ab90-ae65e771ddc2")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "U3")
 					(unit 1)
@@ -24881,7 +24516,7 @@
 			(uuid "dc2bd98b-6fdc-40c6-b28b-1c3e194b8d67")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR039")
 					(unit 1)
@@ -24920,7 +24555,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 44.45 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -24960,7 +24595,7 @@
 			(uuid "60ad4cd0-9d36-442d-9530-c479b485e34f")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C1")
 					(unit 1)
@@ -24970,7 +24605,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_TVS_Filled")
-		(at 68.58 203.2 90)
+		(at 68.58 191.77 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -24980,7 +24615,7 @@
 		(dnp no)
 		(uuid "9ad6d712-9df9-493f-bad5-9e7ed974cee4")
 		(property "Reference" "D5"
-			(at 64.516 203.2 90)
+			(at 64.516 191.77 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24991,7 +24626,7 @@
 			)
 		)
 		(property "Value" "D_TVS_Filled"
-			(at 67.564 205.994 0)
+			(at 67.564 194.564 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25001,8 +24636,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 68.58 203.2 0)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 68.58 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25013,7 +24648,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 68.58 203.2 0)
+			(at 68.58 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25024,7 +24659,7 @@
 			)
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode, filled shape"
-			(at 68.58 203.2 0)
+			(at 68.58 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25041,7 +24676,7 @@
 			(uuid "9325f455-b6a6-472c-ad70-043ca5b86cef")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "D5")
 					(unit 1)
@@ -25082,7 +24717,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 128.016 203.454 90)
 			(hide yes)
 			(show_name no)
@@ -25122,7 +24757,7 @@
 			(uuid "0cb838a5-d5e3-40e2-90c3-8d2799963f2e")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "R3")
 					(unit 1)
@@ -25163,7 +24798,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 550.8752 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -25203,7 +24838,7 @@
 			(uuid "4d98fd3e-646a-4e42-aede-31ed5db3e7cc")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C21")
 					(unit 1)
@@ -25213,7 +24848,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 60.96 237.49 90)
+		(at 60.96 228.6 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25223,7 +24858,7 @@
 		(dnp no)
 		(uuid "a0f72b04-d4ac-488c-a5e7-03665a7ce9c0")
 		(property "Reference" "R7"
-			(at 57.15 236.474 90)
+			(at 57.15 227.584 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25233,7 +24868,7 @@
 			)
 		)
 		(property "Value" "0R(5%)"
-			(at 66.548 236.22 90)
+			(at 66.548 227.33 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25242,8 +24877,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 61.214 236.474 90)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 61.214 227.584 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25254,7 +24889,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 237.49 0)
+			(at 60.96 228.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25265,7 +24900,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 60.96 237.49 0)
+			(at 60.96 228.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25282,7 +24917,7 @@
 			(uuid "13ec99a4-ddf1-4f7e-806f-5ac9a000f257")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "R7")
 					(unit 1)
@@ -25361,7 +24996,7 @@
 			(uuid "9122980e-40cc-4497-bd96-687d4dc12a60")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR023")
 					(unit 1)
@@ -25402,7 +25037,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 54.61 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -25442,7 +25077,7 @@
 			(uuid "17387a34-b16b-48eb-9667-81d16027b372")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C2")
 					(unit 1)
@@ -25484,7 +25119,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 556.26 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -25536,7 +25171,7 @@
 			(uuid "f82ae195-abf0-4f71-8cdd-a9307459ac09")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "D7")
 					(unit 1)
@@ -25613,7 +25248,7 @@
 			(uuid "cb114bb1-8a8a-4ff6-a7f9-1aa1c535e12e")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR025")
 					(unit 1)
@@ -25623,7 +25258,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 60.96 245.11 90)
+		(at 60.96 236.22 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25633,7 +25268,7 @@
 		(dnp no)
 		(uuid "a710b884-25c2-4746-b7c9-8d4f513008fe")
 		(property "Reference" "R8"
-			(at 57.15 244.094 90)
+			(at 57.15 235.204 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25643,7 +25278,7 @@
 			)
 		)
 		(property "Value" "0R(5%)"
-			(at 66.294 243.84 90)
+			(at 66.294 234.95 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25652,8 +25287,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 61.214 244.094 90)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 61.214 235.204 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25664,7 +25299,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 245.11 0)
+			(at 60.96 236.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25675,7 +25310,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 60.96 245.11 0)
+			(at 60.96 236.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25692,7 +25327,7 @@
 			(uuid "fa1aa862-c683-44e1-bc99-a0343b44503b")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "R8")
 					(unit 1)
@@ -25701,8 +25336,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 121.92 124.46 180)
+		(lib_id "Connector:USB_B_Micro")
+		(at 40.64 184.15 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25711,10 +25346,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a92c5456-5927-4734-9c6d-5c9c21ff65eb")
-		(property "Reference" "#FLG03"
-			(at 121.92 126.365 0)
-			(hide yes)
+		(uuid "a75d7bc9-7a3a-49d0-8e57-4aea1080cdbe")
+		(property "Reference" "J1"
+			(at 40.64 171.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25723,8 +25357,8 @@
 				)
 			)
 		)
-		(property "Value" "PWR_FLAG"
-			(at 121.92 129.54 0)
+		(property "Value" "USB_B_Micro"
+			(at 40.64 173.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25733,8 +25367,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 121.92 124.46 0)
+		(property "Footprint" "Connector_USB:USB_Micro-B_Molex_47346-0001"
+			(at 44.45 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25745,7 +25379,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 121.92 124.46 0)
+			(at 44.45 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25755,8 +25389,8 @@
 				)
 			)
 		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 121.92 124.46 0)
+		(property "Description" "USB Micro Type B connector"
+			(at 40.64 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25765,14 +25399,29 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "2"
+			(uuid "007783b6-a7eb-46fc-915b-68de86753d6d")
+		)
+		(pin "SH"
+			(uuid "b72ba77a-d8d9-4c24-b675-cd7c9637612d")
 		)
 		(pin "1"
-			(uuid "bdcafc32-360a-4acc-8c7d-ddde431f7fcd")
+			(uuid "0b0a2fcd-1080-45fa-bad6-1321b4001a86")
+		)
+		(pin "3"
+			(uuid "c2537ee2-7bca-4f3f-b857-e760f9ad4c99")
+		)
+		(pin "4"
+			(uuid "657563ce-aec6-4fd3-9153-bca335393837")
+		)
+		(pin "5"
+			(uuid "211fed5c-fe6c-4da4-833f-30a95ad205a6")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
-					(reference "#FLG03")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -25809,7 +25458,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 157.48 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -25849,7 +25498,7 @@
 			(uuid "d29a4894-045a-4f1a-bb3d-33496da99070")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C9")
 					(unit 1)
@@ -25927,7 +25576,7 @@
 			(uuid "e4e145eb-8201-4084-a55b-5babd15d9778")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR02")
 					(unit 1)
@@ -25971,7 +25620,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 262.89 226.06 0)
 			(hide yes)
 			(show_name no)
@@ -26008,7 +25657,7 @@
 			(uuid "fdb76d14-8d07-4f78-bc6f-c448ba3f83ef")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "TP6")
 					(unit 1)
@@ -26049,7 +25698,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 399.542 293.37 90)
 			(hide yes)
 			(show_name no)
@@ -26089,7 +25738,7 @@
 			(uuid "49f133b8-c305-4645-bbca-498122a1c6e1")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "R18")
 					(unit 1)
@@ -26178,7 +25827,7 @@
 			(uuid "5e164949-582a-43fa-96f8-f3c0afc12018")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "U4")
 					(unit 1)
@@ -26219,7 +25868,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 404.622 293.37 90)
 			(hide yes)
 			(show_name no)
@@ -26259,7 +25908,7 @@
 			(uuid "a217edf5-55fd-43bb-b527-8964ac8d8779")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "R19")
 					(unit 1)
@@ -26298,7 +25947,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 157.48 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -26338,7 +25987,7 @@
 			(uuid "35bd0bdc-b0a3-4a6a-aa26-fa7724d7979e")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C8")
 					(unit 1)
@@ -26379,7 +26028,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 187.96 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -26419,7 +26068,7 @@
 			(uuid "e555dec4-96be-465c-813f-12a4e601e93f")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C6")
 					(unit 1)
@@ -26497,7 +26146,7 @@
 			(uuid "234cc32a-efd0-4c00-bfd6-753561c30fd0")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR021")
 					(unit 1)
@@ -26574,7 +26223,7 @@
 			(uuid "2d3de777-e36c-40b8-83cd-f3b3850a8e67")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR08")
 					(unit 1)
@@ -26615,7 +26264,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
 			(at 297.942 54.61 90)
 			(hide yes)
 			(show_name no)
@@ -26655,7 +26304,7 @@
 			(uuid "fa1b8295-83c5-4f14-88da-b8c0b4f29834")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "SJ19")
 					(unit 1)
@@ -26734,7 +26383,7 @@
 			(uuid "0ebba162-7216-4cd6-801f-a71449d39ded")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR012")
 					(unit 1)
@@ -26775,7 +26424,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 470.8652 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -26815,7 +26464,7 @@
 			(uuid "fb081984-a352-4f04-b11d-bff439fd25e5")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C16")
 					(unit 1)
@@ -26856,7 +26505,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 179.324 227.584 90)
 			(hide yes)
 			(show_name no)
@@ -26896,7 +26545,7 @@
 			(uuid "0a2dec28-d113-49a4-bf22-d5bbf0a6ca8e")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "R6")
 					(unit 1)
@@ -27117,7 +26766,7 @@
 			(uuid "d7b229e1-05bc-41c7-ab90-ae65e771ddc3")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "U3")
 					(unit 2)
@@ -27158,7 +26807,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 129.794 194.056 90)
 			(hide yes)
 			(show_name no)
@@ -27198,7 +26847,7 @@
 			(uuid "de6ada0b-3975-490a-9d6b-67499a34bb2b")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "R5")
 					(unit 1)
@@ -27275,7 +26924,7 @@
 			(uuid "9c6e2d0f-bb69-4948-aef3-0cd5f180ff2e")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR018")
 					(unit 1)
@@ -27316,7 +26965,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 381.9652 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -27356,7 +27005,7 @@
 			(uuid "a6f509ac-337c-48eb-81fa-9c7a63ad40ec")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C14")
 					(unit 1)
@@ -27434,88 +27083,9 @@
 			(uuid "f204d9da-f1ce-4a49-9505-234ce660fcd0")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 55.88 184.15 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "cad66e18-497f-428d-9b76-c89b511ccf20")
-		(property "Reference" "R24"
-			(at 55.88 182.118 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "5.1K"
-			(at 55.88 186.182 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.88 185.928 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.88 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 55.88 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2bdeb750-1ecc-4200-9903-5917ca1152dc")
-		)
-		(pin "2"
-			(uuid "7b8aa47a-cccc-4ca9-a95e-cf2356b15582")
-		)
-		(instances
-			(project "Reforge_1"
-				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
-					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -27555,7 +27125,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 490.22 283.21 0)
 			(hide yes)
 			(show_name no)
@@ -27595,7 +27165,7 @@
 			(uuid "91dcd5fd-f312-4e0d-b82d-edf4bfa3eebf")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "J3")
 					(unit 1)
@@ -27636,7 +27206,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm"
 			(at 509.27 71.628 90)
 			(hide yes)
 			(show_name no)
@@ -27676,7 +27246,7 @@
 			(uuid "2eff0cd3-405c-4a42-9113-3bd4589a30e3")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "SJ34")
 					(unit 1)
@@ -27839,7 +27409,7 @@
 			(uuid "48b304db-adb9-4acc-b93b-efa7f5d86c86")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "U2")
 					(unit 1)
@@ -27916,7 +27486,7 @@
 			(uuid "2871b9bc-5ccf-474d-98b3-c92d74501925")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR045")
 					(unit 1)
@@ -27993,7 +27563,7 @@
 			(uuid "b191ca65-037c-4045-8b59-febb140e8612")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR029")
 					(unit 1)
@@ -28034,7 +27604,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_RGB_Wuerth-PLCC4_3.2x2.8mm_150141M173100"
 			(at 132.08 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -28071,7 +27641,7 @@
 			(uuid "d45fbe9d-ef06-4184-ac40-38e990c8207c")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "VBUS1")
 					(unit 1)
@@ -28081,7 +27651,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_BJT:SS8050")
-		(at 74.93 259.08 0)
+		(at 74.93 250.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -28092,7 +27662,7 @@
 		(fields_autoplaced yes)
 		(uuid "d4ed35e4-eaf0-479b-83ad-4175e639a108")
 		(property "Reference" "Q1"
-			(at 80.01 257.8099 0)
+			(at 80.01 248.9199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28103,7 +27673,7 @@
 			)
 		)
 		(property "Value" "SS8050"
-			(at 80.01 260.3499 0)
+			(at 80.01 251.4599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28114,7 +27684,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 80.01 266.446 0)
+			(at 80.01 257.556 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28127,7 +27697,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.secosgmbh.com/datasheet/products/SSMPTransistor/SOT-23/SS8050.pdf"
-			(at 80.01 263.906 0)
+			(at 80.01 255.016 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28139,7 +27709,7 @@
 			)
 		)
 		(property "Description" "General Purpose NPN Transistor, 1.5A Ic, 25V Vce, SOT-23"
-			(at 108.966 261.366 0)
+			(at 108.966 252.476 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28150,7 +27720,7 @@
 			)
 		)
 		(property "Sim.Device" "NPN"
-			(at 74.93 259.08 0)
+			(at 74.93 250.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28161,7 +27731,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=B 2=E 3=C"
-			(at 74.93 259.08 0)
+			(at 74.93 250.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28181,7 +27751,7 @@
 			(uuid "63920325-cde2-435d-bb1b-ff1ddb330ffd")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "Q1")
 					(unit 1)
@@ -28222,7 +27792,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 300.6852 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -28262,7 +27832,7 @@
 			(uuid "1127349d-b063-4062-8273-30c3317d8b34")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C12")
 					(unit 1)
@@ -28272,7 +27842,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 82.55 190.5 180)
+		(at 82.55 179.07 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -28282,7 +27852,7 @@
 		(dnp no)
 		(uuid "d79e10b9-654e-4eaf-affe-7da5b98c5590")
 		(property "Reference" "D6"
-			(at 82.296 193.548 0)
+			(at 82.296 182.118 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28292,7 +27862,7 @@
 			)
 		)
 		(property "Value" "BAT760-7"
-			(at 83.058 196.088 0)
+			(at 83.058 184.658 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28301,8 +27871,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 82.55 190.5 0)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 82.55 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28313,7 +27883,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 82.55 190.5 0)
+			(at 82.55 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28324,7 +27894,7 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 82.55 190.5 0)
+			(at 82.55 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28341,7 +27911,7 @@
 			(uuid "e15f7222-bbd6-42c9-871c-f8ae336b748a")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "D6")
 					(unit 1)
@@ -28380,7 +27950,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 280.67 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -28420,7 +27990,7 @@
 			(uuid "eb1af34f-654e-4e3f-85b1-16d260a2ceb6")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C11")
 					(unit 1)
@@ -28460,7 +28030,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_B3U-1000P"
 			(at 280.67 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -28500,7 +28070,7 @@
 			(uuid "941b65af-d659-429f-ac9b-3f764b780ab4")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "SW2")
 					(unit 1)
@@ -28541,7 +28111,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
 			(at 414.02 281.178 90)
 			(hide yes)
 			(show_name no)
@@ -28581,7 +28151,7 @@
 			(uuid "6a087af1-73ba-4e0b-bf8b-a7f8e425e42c")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "SJ28")
 					(unit 1)
@@ -28659,7 +28229,7 @@
 			(uuid "01e9f5fb-2e7d-4002-89ac-44f902d13179")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR053")
 					(unit 1)
@@ -28701,7 +28271,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x24_P2.54mm_Horizontal"
 			(at 552.45 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -28807,7 +28377,7 @@
 			(uuid "e9090178-ec2c-4677-ad23-aedff77757d6")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "J4")
 					(unit 1)
@@ -29029,7 +28599,7 @@
 			(uuid "d7b229e1-05bc-41c7-ab90-ae65e771ddc4")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "U3")
 					(unit 3)
@@ -29106,7 +28676,7 @@
 			(uuid "6ede688a-b66c-4ade-80e6-f6f9acdbfd9f")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR07")
 					(unit 1)
@@ -29183,7 +28753,7 @@
 			(uuid "ffcc40c9-db7c-4f00-8658-8728a09bdc35")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#FLG05")
 					(unit 1)
@@ -29222,7 +28792,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 118.364 208.534 90)
 			(hide yes)
 			(show_name no)
@@ -29262,7 +28832,7 @@
 			(uuid "678cf093-37f0-481b-b560-a3fbed849012")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "R4")
 					(unit 1)
@@ -29342,7 +28912,7 @@
 			(uuid "53e6daf2-4f9d-42e1-b1c9-2d5586a23604")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR046")
 					(unit 1)
@@ -29383,7 +28953,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 352.552 58.42 90)
 			(hide yes)
 			(show_name no)
@@ -29423,7 +28993,7 @@
 			(uuid "c0120529-7651-4bce-a5a7-4b55d1a67d98")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "R11")
 					(unit 1)
@@ -29464,7 +29034,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 561.0352 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -29504,7 +29074,7 @@
 			(uuid "e18ea0d1-5fc8-40a6-8102-ac03b033b4bd")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C22")
 					(unit 1)
@@ -29544,7 +29114,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
 			(at 373.38 224.79 0)
 			(hide yes)
 			(show_name no)
@@ -29620,7 +29190,7 @@
 			(uuid "570d862d-6c41-49c9-97f5-0342df554258")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "U6")
 					(unit 3)
@@ -29698,7 +29268,7 @@
 			(uuid "805e1342-eebf-4377-9e98-b1cc1a7f9c93")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR052")
 					(unit 1)
@@ -29739,7 +29309,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
 			(at 349.25 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -29815,7 +29385,7 @@
 			(uuid "852decc7-1106-4f09-bb43-23060fea2e05")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "U6")
 					(unit 5)
@@ -29892,88 +29462,9 @@
 			(uuid "82497094-4495-4b0c-b79a-bdb57953a5d3")
 		)
 		(instances
-			(project "Reforge_1"
+			(project "Reforge_1 (2)"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR049")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 59.69 184.15 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ff60e79a-d37e-45db-9dd7-2a7eba750005")
-		(property "Reference" "#PWR016"
-			(at 66.04 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 63.5 184.1499 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 59.69 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 59.69 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.69 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cd36bc24-8d5c-4b1f-9101-b3050833559c")
-		)
-		(instances
-			(project "Reforge_1"
-				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
-					(reference "#PWR016")
 					(unit 1)
 				)
 			)
