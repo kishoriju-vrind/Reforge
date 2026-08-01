@@ -18,8 +18,8 @@ void app_main(void) {
         .mosi_io_num = MOSI_PIN,
         .miso_io_num = MISO_PIN,
         .sclk_io_num = CLK_PIN,
-        .quadwp_io_num = -1, // Must be -1 to prevent mapping to GPIO 0
-        .quadhd_io_num = -1  // Must be -1 to prevent mapping to GPIO 0
+        .quadwp_io_num = -1, 
+        .quadhd_io_num = -1  
     };
 
     spi_slave_interface_config_t slave_config = {
@@ -56,7 +56,6 @@ void app_main(void) {
         .rx_buffer = rx_data,
     };
 
-    // This will block until the Master sends the clock signals
     ret = spi_slave_transmit(SPI2_HOST, &transac, portMAX_DELAY);
 
     if (ret == ESP_OK) {
