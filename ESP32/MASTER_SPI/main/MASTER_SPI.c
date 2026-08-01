@@ -17,12 +17,12 @@ void app_main(void) {
         .mosi_io_num = MOSI_PIN,
         .miso_io_num = MISO_PIN,
         .sclk_io_num = CLK_PIN,
-        .quadwp_io_num = -1, // Must be -1
-        .quadhd_io_num = -1  // Must be -1
+        .quadwp_io_num = -1, 
+        .quadhd_io_num = -1  
     };
 
     spi_device_interface_config_t dev_config = {
-        .clock_speed_hz = 100000, // 100 kHz
+        .clock_speed_hz = 100000, 
         .spics_io_num = CS_PIN,
         .mode = 0,
         .queue_size = 1,
@@ -65,7 +65,7 @@ void app_main(void) {
     };
 
     printf("Master initialized. Giving Slave 30 seconds to boot up...\n");
-    vTaskDelay(pdMS_TO_TICKS(1000)); // Delay to allow slave to setup transaction
+    vTaskDelay(pdMS_TO_TICKS(1000)); 
 
     printf("Starting transmission...\n");
     ret = spi_device_transmit(dev, &transac);
