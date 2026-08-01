@@ -1,0 +1,369 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/project.cmake:601 (__project)"
+      - "CMakeLists.txt:71 (project)"
+    message: |
+      The target system is: Generic -  - 
+      The host system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/project.cmake:601 (__project)"
+      - "CMakeLists.txt:71 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Users/itshy/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc.exe 
+      Build flags: @C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/cflags
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/3.30.2/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/project.cmake:601 (__project)"
+      - "CMakeLists.txt:71 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Users/itshy/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-g++.exe 
+      Build flags: @C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/cxxflags
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/3.30.2/CompilerIdCXX/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1192 (message)"
+      - "C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/project.cmake:601 (__project)"
+      - "CMakeLists.txt:71 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      xtensa-esp-elf-gcc.exe (crosstool-NG esp-14.2.0_20260121) 14.2.0
+      Copyright (C) 2024 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/project.cmake:601 (__project)"
+      - "CMakeLists.txt:71 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-ee2zr0"
+      binary: "C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-ee2zr0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "@\"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/cflags\""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "@\"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/ldflags\""
+      CMAKE_MODULE_PATH: "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake;C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/third_party"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-ee2zr0'
+        
+        Run Build Command(s): C:/Users/itshy/Espressif/tools/ninja/1.12.1/ninja.exe -v cmTC_d3f83
+        [1/2] C:\\Users\\itshy\\Espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20260121\\xtensa-esp-elf\\bin\\xtensa-esp32-elf-gcc.exe   @"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/cflags"    -v -o CMakeFiles/cmTC_d3f83.dir/CMakeCCompilerABI.c.obj -c C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_d3f83.dir/CMakeCCompilerABI.c.obj 
+        C:\\Users\\itshy\\Espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20260121\\xtensa-esp-elf\\bin\\xtensa-esp32-elf-gcc.exe   @"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/cflags"    -v -o CMakeFiles/cmTC_d3f83.dir/CMakeCCompilerABI.c.obj -c C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=C:\\Users\\itshy\\Espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20260121\\xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe
+        Target: xtensa-esp-elf
+        Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-sysroot=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-native-system-header-dir=/include --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-14.2.0_20260121' --disable-__cxa_atexit --enable-cxx-flags='-ffunction-sections -fdata-sections' --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --enable-plugin --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-libstdcxx-time=yes --disable-win32-utf8-manifest --with-gnu-ld
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) 
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-v' '-o' 'CMakeFiles/cmTC_d3f83.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_d3f83.dir/'
+         C:/Users/itshy/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1.exe -quiet -v -imultilib esp32 -iprefix C:/Users/itshy/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/Users/itshy/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_d3f83.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32.so -version -o C:\\Users\\itshy\\AppData\\Local\\Temp\\cc2H7OOA.s\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/project.cmake:601 (__project)"
+      - "CMakeLists.txt:71 (project)"
+    checks:
+      - "Check for working C compiler: C:/Users/itshy/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc.exe"
+    directories:
+      source: "C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-pn5g5y"
+      binary: "C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-pn5g5y"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "@\"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/cflags\""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "@\"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/ldflags\""
+      CMAKE_MODULE_PATH: "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake;C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/third_party"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-pn5g5y'
+        
+        Run Build Command(s): C:/Users/itshy/Espressif/tools/ninja/1.12.1/ninja.exe -v cmTC_8959b
+        [1/2] C:\\Users\\itshy\\Espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20260121\\xtensa-esp-elf\\bin\\xtensa-esp32-elf-gcc.exe   @"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/cflags" -o CMakeFiles/cmTC_8959b.dir/testCCompiler.c.obj -c C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-pn5g5y/testCCompiler.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\itshy\\Espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20260121\\xtensa-esp-elf\\bin\\xtensa-esp32-elf-gcc.exe @"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/cflags" @"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/ldflags" CMakeFiles/cmTC_8959b.dir/testCCompiler.c.obj -o cmTC_8959b   && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/project.cmake:601 (__project)"
+      - "CMakeLists.txt:71 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-utc3q1"
+      binary: "C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-utc3q1"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "@\"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/cxxflags\""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "@\"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/ldflags\""
+      CMAKE_MODULE_PATH: "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake;C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/third_party"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-utc3q1'
+        
+        Run Build Command(s): C:/Users/itshy/Espressif/tools/ninja/1.12.1/ninja.exe -v cmTC_8a13e
+        [1/2] C:\\Users\\itshy\\Espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20260121\\xtensa-esp-elf\\bin\\xtensa-esp32-elf-g++.exe   @"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/cxxflags"    -v -o CMakeFiles/cmTC_8a13e.dir/CMakeCXXCompilerABI.cpp.obj -c C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_8a13e.dir/CMakeCXXCompilerABI.cpp.obj 
+        C:\\Users\\itshy\\Espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20260121\\xtensa-esp-elf\\bin\\xtensa-esp32-elf-g++.exe   @"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/cxxflags"    -v -o CMakeFiles/cmTC_8a13e.dir/CMakeCXXCompilerABI.cpp.obj -c C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=C:\\Users\\itshy\\Espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20260121\\xtensa-esp-elf\\bin\\xtensa-esp-elf-g++.exe
+        Target: xtensa-esp-elf
+        Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-sysroot=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-native-system-header-dir=/include --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-14.2.0_20260121' --disable-__cxa_atexit --enable-cxx-flags='-ffunction-sections -fdata-sections' --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --enable-plugin --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-libstdcxx-time=yes --disable-win32-utf8-manifest --with-gnu-ld
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) 
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-v' '-o' 'CMakeFiles/cmTC_8a13e.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_8a13e.dir/'
+         C:/Users/itshy/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus.exe -quiet -v -imultilib esp32 -iprefix C:/Users/itshy/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/Users/itshy/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_8a13e.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32.so -version -o C:\\Users\\itshy\\AppData\\Local\\Temp\\ccXOzPIs.s\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:56 (try_compile)"
+      - "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/project.cmake:601 (__project)"
+      - "CMakeLists.txt:71 (project)"
+    checks:
+      - "Check for working CXX compiler: C:/Users/itshy/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-g++.exe"
+    directories:
+      source: "C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-c39vb3"
+      binary: "C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-c39vb3"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "@\"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/cxxflags\""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "@\"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/ldflags\""
+      CMAKE_MODULE_PATH: "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake;C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/third_party"
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-c39vb3'
+        
+        Run Build Command(s): C:/Users/itshy/Espressif/tools/ninja/1.12.1/ninja.exe -v cmTC_22ff0
+        [1/2] C:\\Users\\itshy\\Espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20260121\\xtensa-esp-elf\\bin\\xtensa-esp32-elf-g++.exe   @"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/cxxflags" -o CMakeFiles/cmTC_22ff0.dir/testCXXCompiler.cxx.obj -c C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-c39vb3/testCXXCompiler.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\itshy\\Espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20260121\\xtensa-esp-elf\\bin\\xtensa-esp32-elf-g++.exe @"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/cxxflags" @"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/ldflags" CMakeFiles/cmTC_22ff0.dir/testCXXCompiler.cxx.obj -o cmTC_22ff0   && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/toolchain_flags.cmake:179 (cmake_determine_compiler_abi)"
+      - "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/components/newlib/project_include.cmake:20 (idf_toolchain_rerun_abi_detection)"
+      - "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/build.cmake:469 (include)"
+      - "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/build.cmake:720 (__build_process_project_includes)"
+      - "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/project.cmake:752 (idf_build_process)"
+      - "CMakeLists.txt:71 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-rn0g34"
+      binary: "C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-rn0g34"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "@\"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/cflags\""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "@\"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/ldflags\""
+      CMAKE_MODULE_PATH: "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake;C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/third_party"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-rn0g34'
+        
+        Run Build Command(s): C:/Users/itshy/Espressif/tools/ninja/1.12.1/ninja.exe -v cmTC_03c83
+        [1/2] C:\\Users\\itshy\\Espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20260121\\xtensa-esp-elf\\bin\\xtensa-esp32-elf-gcc.exe   @"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/cflags"    -v -o CMakeFiles/cmTC_03c83.dir/CMakeCCompilerABI.c.obj -c C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_03c83.dir/CMakeCCompilerABI.c.obj 
+        C:\\Users\\itshy\\Espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20260121\\xtensa-esp-elf\\bin\\xtensa-esp32-elf-gcc.exe   @"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/cflags"    -v -o CMakeFiles/cmTC_03c83.dir/CMakeCCompilerABI.c.obj -c C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=C:\\Users\\itshy\\Espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20260121\\xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe
+        Target: xtensa-esp-elf
+        Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-sysroot=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-native-system-header-dir=/include --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-14.2.0_20260121' --disable-__cxa_atexit --enable-cxx-flags='-ffunction-sections -fdata-sections' --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --enable-plugin --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-libstdcxx-time=yes --disable-win32-utf8-manifest --with-gnu-ld
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) 
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-v' '-o' 'CMakeFiles/cmTC_03c83.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_03c83.dir/'
+         C:/Users/itshy/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1.exe -quiet -v -imultilib esp32 -iprefix C:/Users/itshy/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/Users/itshy/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_03c83.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32.so -version -o C:\\Users\\itshy\\AppData\\Local\\Temp\\ccy9z8xg.s\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/toolchain_flags.cmake:179 (cmake_determine_compiler_abi)"
+      - "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/components/newlib/project_include.cmake:20 (idf_toolchain_rerun_abi_detection)"
+      - "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/build.cmake:469 (include)"
+      - "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/build.cmake:720 (__build_process_project_includes)"
+      - "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/project.cmake:752 (idf_build_process)"
+      - "CMakeLists.txt:71 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-m4yb1k"
+      binary: "C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-m4yb1k"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "@\"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/cxxflags\""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "@\"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/ldflags\""
+      CMAKE_MODULE_PATH: "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake;C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/third_party"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-m4yb1k'
+        
+        Run Build Command(s): C:/Users/itshy/Espressif/tools/ninja/1.12.1/ninja.exe -v cmTC_9cb18
+        [1/2] C:\\Users\\itshy\\Espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20260121\\xtensa-esp-elf\\bin\\xtensa-esp32-elf-g++.exe   @"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/cxxflags"    -v -o CMakeFiles/cmTC_9cb18.dir/CMakeCXXCompilerABI.cpp.obj -c C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_9cb18.dir/CMakeCXXCompilerABI.cpp.obj 
+        C:\\Users\\itshy\\Espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20260121\\xtensa-esp-elf\\bin\\xtensa-esp32-elf-g++.exe   @"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/cxxflags"    -v -o CMakeFiles/cmTC_9cb18.dir/CMakeCXXCompilerABI.cpp.obj -c C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=C:\\Users\\itshy\\Espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20260121\\xtensa-esp-elf\\bin\\xtensa-esp-elf-g++.exe
+        Target: xtensa-esp-elf
+        Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-sysroot=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-native-system-header-dir=/include --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-14.2.0_20260121' --disable-__cxa_atexit --enable-cxx-flags='-ffunction-sections -fdata-sections' --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --enable-plugin --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-libstdcxx-time=yes --disable-win32-utf8-manifest --with-gnu-ld
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) 
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-v' '-o' 'CMakeFiles/cmTC_9cb18.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_9cb18.dir/'
+         C:/Users/itshy/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus.exe -quiet -v -imultilib esp32 -iprefix C:/Users/itshy/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/Users/itshy/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_9cb18.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32.so -version -o C:\\Users\\itshy\\AppData\\Local\\Temp\\ccetFkuc.s\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/toolchain_flags.cmake:179 (cmake_determine_compiler_abi)"
+      - "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/CMakeLists.txt:85 (idf_toolchain_rerun_abi_detection)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-pcaxbk"
+      binary: "C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-pcaxbk"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "@\"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/cflags\""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "@\"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/ldflags\""
+      CMAKE_MODULE_PATH: "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake;C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/third_party"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-pcaxbk'
+        
+        Run Build Command(s): C:/Users/itshy/Espressif/tools/ninja/1.12.1/ninja.exe -v cmTC_bc4e6
+        [1/2] C:\\Users\\itshy\\Espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20260121\\xtensa-esp-elf\\bin\\xtensa-esp32-elf-gcc.exe   @"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/cflags"    -v -o CMakeFiles/cmTC_bc4e6.dir/CMakeCCompilerABI.c.obj -c C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_bc4e6.dir/CMakeCCompilerABI.c.obj 
+        C:\\Users\\itshy\\Espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20260121\\xtensa-esp-elf\\bin\\xtensa-esp32-elf-gcc.exe   @"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/cflags"    -v -o CMakeFiles/cmTC_bc4e6.dir/CMakeCCompilerABI.c.obj -c C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=C:\\Users\\itshy\\Espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20260121\\xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe
+        Target: xtensa-esp-elf
+        Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-sysroot=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-native-system-header-dir=/include --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-14.2.0_20260121' --disable-__cxa_atexit --enable-cxx-flags='-ffunction-sections -fdata-sections' --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --enable-plugin --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-libstdcxx-time=yes --disable-win32-utf8-manifest --with-gnu-ld
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) 
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-Wno-frame-address' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-v' '-o' 'CMakeFiles/cmTC_bc4e6.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_bc4e6.dir/'
+         C:/Users/itshy/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1.exe -quiet -v -imultilib esp32 -iprefix C:/Users/itshy/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/Users/itshy/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_bc4e6.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32.so -mlongcalls -Wno-frame-address -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -o C:\\Users\\itshy\\AppData\\Local\\Temp\\ccVuRtxg.s\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/toolchain_flags.cmake:179 (cmake_determine_compiler_abi)"
+      - "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/CMakeLists.txt:85 (idf_toolchain_rerun_abi_detection)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-8fle3f"
+      binary: "C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-8fle3f"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "@\"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/cxxflags\""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "@\"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/ldflags\""
+      CMAKE_MODULE_PATH: "C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake;C:/Users/itshy/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/third_party"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-8fle3f'
+        
+        Run Build Command(s): C:/Users/itshy/Espressif/tools/ninja/1.12.1/ninja.exe -v cmTC_9aa57
+        [1/2] C:\\Users\\itshy\\Espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20260121\\xtensa-esp-elf\\bin\\xtensa-esp32-elf-g++.exe   @"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/cxxflags"    -v -o CMakeFiles/cmTC_9aa57.dir/CMakeCXXCompilerABI.cpp.obj -c C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_9aa57.dir/CMakeCXXCompilerABI.cpp.obj 
+        C:\\Users\\itshy\\Espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20260121\\xtensa-esp-elf\\bin\\xtensa-esp32-elf-g++.exe   @"C:/Users/itshy/OneDrive/Documents/REFORGE/ESP32/SLAVE_SPI/build/bootloader/toolchain/cxxflags"    -v -o CMakeFiles/cmTC_9aa57.dir/CMakeCXXCompilerABI.cpp.obj -c C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=C:\\Users\\itshy\\Espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20260121\\xtensa-esp-elf\\bin\\xtensa-esp-elf-g++.exe
+        Target: xtensa-esp-elf
+        Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-sysroot=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-native-system-header-dir=/include --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-14.2.0_20260121' --disable-__cxa_atexit --enable-cxx-flags='-ffunction-sections -fdata-sections' --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --enable-plugin --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-libstdcxx-time=yes --disable-win32-utf8-manifest --with-gnu-ld
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) 
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-Wno-frame-address' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-rtti' '-v' '-o' 'CMakeFiles/cmTC_9aa57.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_9aa57.dir/'
+         C:/Users/itshy/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus.exe -quiet -v -imultilib esp32/no-rtti -iprefix C:/Users/itshy/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/Users/itshy/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf C:/Users/itshy/Espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_9aa57.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32.so -mlongcalls -Wno-frame-address -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-rtti -o C:\\Users\\itshy\\AppData\\Local\\Temp\\cc1sOmPF.s\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
