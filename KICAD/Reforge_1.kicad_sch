@@ -1269,129 +1269,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:TestPoint"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.762)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector:USB_C_Receptacle_USB2.0_16P"
 			(pin_names
 				(offset 1.016)
@@ -10297,16 +10174,6 @@
 	)
 	(wire
 		(pts
-			(xy 486.41 231.14) (xy 486.41 236.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "119fcdcd-091b-44e2-8d2f-9be0a617644e")
-	)
-	(wire
-		(pts
 			(xy 179.07 210.82) (xy 193.04 210.82)
 		)
 		(stroke
@@ -10657,7 +10524,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 240.03) (xy 64.77 240.03)
+			(xy 49.53 240.03) (xy 87.63 240.03)
 		)
 		(stroke
 			(width 0)
@@ -10744,16 +10611,6 @@
 			(type default)
 		)
 		(uuid "2a95f3e1-af6d-4eea-a794-e035cfa65e5b")
-	)
-	(wire
-		(pts
-			(xy 486.41 243.84) (xy 486.41 245.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2aa5ef0e-8524-4269-a031-43280ed556a7")
 	)
 	(wire
 		(pts
@@ -11164,16 +11021,6 @@
 			(type default)
 		)
 		(uuid "40ecdf7d-9b14-46ef-bf5b-896e31418225")
-	)
-	(wire
-		(pts
-			(xy 477.52 243.84) (xy 477.52 245.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4162dae9-531b-4e1d-92ec-f67aca31383a")
 	)
 	(wire
 		(pts
@@ -11867,16 +11714,6 @@
 	)
 	(wire
 		(pts
-			(xy 496.57 231.14) (xy 496.57 236.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6692470d-3a87-4c79-a684-4b7dd9c08832")
-	)
-	(wire
-		(pts
 			(xy 469.9 66.04) (xy 458.47 66.04)
 		)
 		(stroke
@@ -11924,16 +11761,6 @@
 			(type default)
 		)
 		(uuid "68ad359f-72b1-47fa-a73a-a589f52b1509")
-	)
-	(wire
-		(pts
-			(xy 496.57 243.84) (xy 496.57 245.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68f5bc60-b9a1-41f5-9c68-caaceb26685b")
 	)
 	(wire
 		(pts
@@ -12157,7 +11984,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 247.65) (xy 64.77 247.65)
+			(xy 49.53 247.65) (xy 87.63 247.65)
 		)
 		(stroke
 			(width 0)
@@ -12717,16 +12544,6 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 240.03) (xy 72.39 240.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a084bef2-c5b9-4d8b-a64d-35e9d76d3066")
-	)
-	(wire
-		(pts
 			(xy 222.25 73.66) (xy 204.47 73.66)
 		)
 		(stroke
@@ -12974,16 +12791,6 @@
 			(type default)
 		)
 		(uuid "ae8f0aa6-fdcd-4936-ad51-607c50f8cfe2")
-	)
-	(wire
-		(pts
-			(xy 87.63 247.65) (xy 72.39 247.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aec4fa8d-e501-41b5-84df-2292bdd2d15f")
 	)
 	(wire
 		(pts
@@ -13464,16 +13271,6 @@
 			(type default)
 		)
 		(uuid "c8b8a70e-742a-40e3-bb36-3a759ebdf907")
-	)
-	(wire
-		(pts
-			(xy 477.52 231.14) (xy 477.52 236.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8f9f235-f453-451c-ac45-469290515159")
 	)
 	(wire
 		(pts
@@ -14685,16 +14482,6 @@
 		)
 		(uuid "11a7bdf8-2e44-4553-8e4e-3facd5396c98")
 	)
-	(label "EXT_5V"
-		(at 496.57 231.14 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "141df720-2229-4bc4-97c3-6c9938dfa43b")
-	)
 	(label "IOB_13B"
 		(at 506.73 265.43 0)
 		(effects
@@ -15605,16 +15392,6 @@
 		)
 		(uuid "62c68687-4278-43aa-8d87-c1c2b4ebbc41")
 	)
-	(label "VIO_BANK_0_2"
-		(at 477.52 231.14 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "636054fa-86da-4b67-be4e-3a7a22e95a27")
-	)
 	(label "IOB_5B"
 		(at 417.83 92.71 0)
 		(effects
@@ -15704,16 +15481,6 @@
 			(justify left bottom)
 		)
 		(uuid "76e0856b-7530-49de-ac59-2d3a4c6861cf")
-	)
-	(label "VDD33"
-		(at 486.41 231.14 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "772c9f99-0b89-4c74-92fc-00811b62dc3f")
 	)
 	(label "IOB_3B_G6"
 		(at 417.83 87.63 0)
@@ -17781,98 +17548,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 496.57 240.03 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "16dc4424-dcf4-4ef3-8bec-a2dc3b4550c1")
-		(property "Reference" "C28"
-			(at 499.872 238.76 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DNI"
-			(at 500.126 240.792 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 497.5352 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 496.57 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 496.57 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Link" ""
-			(at 496.57 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a6bc8741-02fa-4bc7-9627-03d2bf4f5c68")
-		)
-		(pin "2"
-			(uuid "0df07997-62dd-4601-82c6-7d1ac71d0036")
-		)
-		(instances
-			(project "Reforge_1"
-				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
-					(reference "C28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 304.8 68.58 0)
 		(unit 1)
@@ -18207,98 +17882,6 @@
 			(project "Reforge_1"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 146.05 190.5 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1d5a17d8-df93-4d6d-ae53-be24ab02cf4e")
-		(property "Reference" "TP1"
-			(at 148.59 185.9279 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 148.59 188.4679 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 151.13 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 151.13 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 146.05 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Link" ""
-			(at 146.05 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7667ee99-2bfa-4018-b8f4-1539eed34002")
-		)
-		(instances
-			(project "Reforge_1"
-				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
-					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -19306,7 +18889,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 478.282 187.96 90)
 			(hide yes)
 			(show_name no)
@@ -19581,98 +19164,6 @@
 			(project "Reforge_1"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "J15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 163.83 190.5 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "328d4578-b1f1-4b98-ae4f-28a1fee4efdc")
-		(property "Reference" "TP2"
-			(at 166.37 185.9279 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 166.37 188.4679 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 168.91 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 168.91 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 163.83 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Link" ""
-			(at 163.83 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8ac43d7a-d08f-42bd-964f-02d519cd5e82")
-		)
-		(instances
-			(project "Reforge_1"
-				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
-					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -20855,98 +20346,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 486.41 240.03 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4d78b254-d8cd-443a-b79e-27189efc707f")
-		(property "Reference" "C27"
-			(at 489.204 238.76 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DNI"
-			(at 489.458 240.792 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 487.3752 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 486.41 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 486.41 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Link" ""
-			(at 486.41 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1f0f720a-5d3a-49e7-a72d-9b5abfff735c")
-		)
-		(pin "2"
-			(uuid "f55d271c-b0d9-4e5c-addc-3c790cd24d50")
-		)
-		(instances
-			(project "Reforge_1"
-				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
-					(reference "C27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 60.96 217.17 0)
 		(unit 1)
@@ -21019,98 +20418,6 @@
 			(project "Reforge_1"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 477.52 240.03 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "50ee2526-26c7-4879-b3bc-bd2fd6914259")
-		(property "Reference" "C26"
-			(at 470.916 237.998 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DNI"
-			(at 470.916 240.284 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 478.4852 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 477.52 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 477.52 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Link" ""
-			(at 477.52 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7c6dd7e6-d334-40f1-9112-343afa74076b")
-		)
-		(pin "2"
-			(uuid "97598039-2bd5-451a-b3d5-168afde7d5bb")
-		)
-		(instances
-			(project "Reforge_1"
-				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
-					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -24022,6 +23329,7 @@
 	(symbol
 		(lib_id "Transistor_BJT:SS8050")
 		(at 82.55 280.67 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -24029,10 +23337,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8373b8e4-0f07-47c9-a853-3df70de928cf")
 		(property "Reference" "Q2"
-			(at 87.63 279.3999 0)
+			(at 87.63 281.9401 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24043,7 +23350,7 @@
 			)
 		)
 		(property "Value" "SS8050"
-			(at 87.63 281.9399 0)
+			(at 87.63 279.4001 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24054,7 +23361,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 87.63 288.036 0)
+			(at 87.63 273.304 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24067,7 +23374,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.secosgmbh.com/datasheet/products/SSMPTransistor/SOT-23/SS8050.pdf"
-			(at 87.63 285.496 0)
+			(at 87.63 275.844 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24079,7 +23386,7 @@
 			)
 		)
 		(property "Description" "General Purpose NPN Transistor, 1.5A Ic, 25V Vce, SOT-23"
-			(at 116.586 282.956 0)
+			(at 116.586 278.384 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24589,84 +23896,6 @@
 			(project "Reforge_1"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 496.57 245.11 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "918e412b-c6b9-4781-9a0f-1023d51dc15b")
-		(property "Reference" "#PWR054"
-			(at 496.57 251.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 496.57 250.19 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 496.57 245.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 496.57 245.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 496.57 245.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b8b4d96c-52dd-40f5-acc3-a7e0b119b04b")
-		)
-		(instances
-			(project "Reforge_1"
-				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
-					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -25527,96 +24756,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 68.58 240.03 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a0f72b04-d4ac-488c-a5e7-03665a7ce9c0")
-		(property "Reference" "R7"
-			(at 64.77 239.014 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0R(5%)"
-			(at 74.168 238.76 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 68.834 239.014 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 68.58 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 68.58 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Link" ""
-			(at 68.58 240.03 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fb6a9cd3-d5ef-454f-9ee7-94322e21120d")
-		)
-		(pin "2"
-			(uuid "13ec99a4-ddf1-4f7e-806f-5ac9a000f257")
-		)
-		(instances
-			(project "Reforge_1"
-				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
-					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+2V5")
 		(at 501.65 50.8 90)
 		(unit 1)
@@ -26041,96 +25180,6 @@
 			(project "Reforge_1"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 68.58 247.65 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a710b884-25c2-4746-b7c9-8d4f513008fe")
-		(property "Reference" "R8"
-			(at 64.77 246.634 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0R(5%)"
-			(at 73.914 246.38 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 68.834 246.634 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 68.58 247.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 68.58 247.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Link" ""
-			(at 68.58 247.65 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c24de105-061d-4cc8-a0e4-91b7934d00de")
-		)
-		(pin "2"
-			(uuid "fa1aa862-c683-44e1-bc99-a0343b44503b")
-		)
-		(instances
-			(project "Reforge_1"
-				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
-					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -27909,98 +26958,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 262.89 227.33 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ce3d5ee3-1573-4484-894a-6a65b0f5646e")
-		(property "Reference" "TP8"
-			(at 265.43 222.7579 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 265.43 225.2979 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 267.97 227.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 267.97 227.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 262.89 227.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Link" ""
-			(at 262.89 227.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "148307c7-629c-4362-b86c-5ca3aaf4d125")
-		)
-		(instances
-			(project "Reforge_1"
-				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
-					(reference "TP8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 486.41 262.89 0)
 		(unit 1)
@@ -28431,95 +27388,6 @@
 			(project "Reforge_1"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "#PWR029")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 142.24 195.58 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d34dbfd5-7691-4ccc-aea5-5ad0450f3772")
-		(property "Reference" "VBUS1"
-			(at 142.24 188.214 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 144.78 192.278 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_RGB_Wuerth-PLCC4_3.2x2.8mm_150141M173100"
-			(at 147.32 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 147.32 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 142.24 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Link" ""
-			(at 142.24 195.58 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d45fbe9d-ef06-4184-ac40-38e990c8207c")
-		)
-		(instances
-			(project "Reforge_1"
-				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
-					(reference "VBUS1")
 					(unit 1)
 				)
 			)
@@ -29207,84 +28075,6 @@
 			(project "Reforge_1"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "SJ28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 486.41 245.11 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e1f870bc-e833-4b9f-85f7-0c297125f901")
-		(property "Reference" "#PWR053"
-			(at 486.41 251.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 486.41 250.19 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 486.41 245.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 486.41 245.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 486.41 245.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "01e9f5fb-2e7d-4002-89ac-44f902d13179")
-		)
-		(instances
-			(project "Reforge_1"
-				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
-					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -30130,84 +28920,6 @@
 			(project "Reforge_1"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "C22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 477.52 245.11 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fc88a5dd-4cc5-4546-aed7-0230d8eb6084")
-		(property "Reference" "#PWR052"
-			(at 477.52 251.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 477.52 250.19 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 477.52 245.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 477.52 245.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 477.52 245.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "805e1342-eebf-4377-9e98-b1cc1a7f9c93")
-		)
-		(instances
-			(project "Reforge_1"
-				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
-					(reference "#PWR052")
 					(unit 1)
 				)
 			)
