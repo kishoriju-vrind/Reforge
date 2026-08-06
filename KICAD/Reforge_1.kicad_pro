@@ -733,7 +733,7 @@
         "uuid": "ba70c426-5169-436b-9f8e-122ac1661c00"
       }
     ],
-    "used_designators": "",
+    "used_designators": "PWR_LED1-3,R7-8",
     "variants": []
   },
   "sheets": [
