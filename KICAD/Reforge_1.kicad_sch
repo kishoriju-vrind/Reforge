@@ -9351,12 +9351,6 @@
 		(uuid "01b76769-9d30-4361-8aae-ae6a2a945157")
 	)
 	(junction
-		(at 541.02 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "067cb3b6-e31a-4092-a7b6-7d275ad142eb")
-	)
-	(junction
 		(at 204.47 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9759,6 +9753,10 @@
 	(no_connect
 		(at 189.23 241.3)
 		(uuid "329e2f01-5cb8-4955-8679-9fffdc993827")
+	)
+	(no_connect
+		(at 440.69 180.34)
+		(uuid "4672d628-ae54-48af-9e78-82081564d8f7")
 	)
 	(no_connect
 		(at 189.23 215.9)
@@ -12448,7 +12446,7 @@
 	)
 	(wire
 		(pts
-			(xy 541.02 43.18) (xy 548.64 43.18)
+			(xy 537.21 43.18) (xy 548.64 43.18)
 		)
 		(stroke
 			(width 0)
@@ -12905,16 +12903,6 @@
 			(type default)
 		)
 		(uuid "b0cde261-00a8-460e-bc50-88aaac2d7c0d")
-	)
-	(wire
-		(pts
-			(xy 537.21 43.18) (xy 541.02 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b1223a27-4948-4da3-b42b-3bada380f8b3")
 	)
 	(wire
 		(pts
@@ -16596,7 +16584,7 @@
 		)
 		(uuid "ee5b4485-5cf4-4772-8fa5-0a24e2536508")
 	)
-	(label "CLK"
+	(label "SCK"
 		(at 527.05 193.04 0)
 		(effects
 			(font
@@ -19896,6 +19884,7 @@
 	(symbol
 		(lib_id "Device:R_US")
 		(at 212.09 60.96 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19905,7 +19894,7 @@
 		(dnp no)
 		(uuid "45242d4b-ef67-4f47-9d5b-a911f8fe7e8b")
 		(property "Reference" "R2"
-			(at 213.614 57.404 0)
+			(at 210.566 57.404 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19916,7 +19905,7 @@
 			)
 		)
 		(property "Value" "330R"
-			(at 213.36 59.182 0)
+			(at 210.82 59.182 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19927,7 +19916,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 213.106 61.214 90)
+			(at 211.074 61.214 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21788,7 +21777,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "606ff179-4cdb-4471-89df-f2c8c1838387")
 		(property "Reference" "U8"
 			(at 374.65 251.4599 0)
@@ -23824,7 +23812,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8daf82e6-968b-49fa-be8b-0be5068d0981")
 		(property "Reference" "D1"
 			(at 554.99 63.5 0)
@@ -28398,10 +28385,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "330R"
 			(at 102.87 191.262 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28962,83 +28949,6 @@
 			(project "Reforge_1"
 				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
 					(reference "U6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 541.02 43.18 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e9ae93aa-a3e7-40a6-8332-1ee07b2dc13f")
-		(property "Reference" "#FLG05"
-			(at 541.02 45.085 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 541.274 46.736 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 541.02 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 541.02 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 541.02 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ffcc40c9-db7c-4f00-8658-8728a09bdc35")
-		)
-		(instances
-			(project "Reforge_1"
-				(path "/ba70c426-5169-436b-9f8e-122ac1661c00"
-					(reference "#FLG05")
 					(unit 1)
 				)
 			)
