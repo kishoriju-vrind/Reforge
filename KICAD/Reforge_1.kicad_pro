@@ -11,9 +11,9 @@
         "board_outline_line_width": 0.05,
         "copper_line_width": 0.2,
         "copper_text_italic": false,
-        "copper_text_size_h": 1.5,
-        "copper_text_size_v": 1.5,
-        "copper_text_thickness": 0.3,
+        "copper_text_size_h": 0.5,
+        "copper_text_size_v": 0.5,
+        "copper_text_thickness": 0.125,
         "copper_text_upright": false,
         "courtyard_line_width": 0.05,
         "dimension_precision": 5,
@@ -47,7 +47,7 @@
         "silk_text_italic": false,
         "silk_text_size_h": 0.5,
         "silk_text_size_v": 0.5,
-        "silk_text_thickness": 0.1,
+        "silk_text_thickness": 0.125,
         "silk_text_upright": false,
         "zones": {
           "border_display_style": 2,
@@ -63,7 +63,7 @@
           "min_clearance": 0.2,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
-          "pad_connection": 2,
+          "pad_connection": 0,
           "remove_islands": 0,
           "thermal_relief_gap": 0.2,
           "thermal_relief_spoke_width": 0.25
@@ -76,7 +76,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "items_not_allowed|155665000|42810000|19f0c26b-5252-4397-a4ae-659049572648|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -601,7 +606,7 @@
           "show": false
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Footprint",
           "name": "Footprint",
           "show": true
@@ -733,7 +738,7 @@
         "uuid": "ba70c426-5169-436b-9f8e-122ac1661c00"
       }
     ],
-    "used_designators": "",
+    "used_designators": "C26-28,H1",
     "variants": []
   },
   "sheets": [
