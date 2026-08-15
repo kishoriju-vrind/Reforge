@@ -19,7 +19,7 @@ void app_main(void)
     esp_err_t ret;
     spi_device_handle_t spi;
 
-    // 1. Configure the SPI Bus
+    // 1. Configuring the SPI Bus
     spi_bus_config_t buscfg = {
         .miso_io_num = PIN_NUM_MISO,
         .mosi_io_num = PIN_NUM_MOSI,
@@ -29,26 +29,24 @@ void app_main(void)
         .max_transfer_sz = 32
     };
 
-    // 2. Configure the SPI Device (Flash Memory)
+    // 2. Configuring the SPI Device (Flash Memory)
     spi_device_interface_config_t devcfg = {
-        .clock_speed_hz = 1000000,           // 1 MHz clock speed for reliable initialization
-        .mode = 0,                           // SPI bus operation Mode 0 (0,0) is supported[span_3](start_span)[span_3](end_span)
+        .clock_speed_hz = 1000000,           // 1 MHz clock speed 
+        .mode = 0,                           // SPI bus operation Mode 0 (0,0)
         .spics_io_num = PIN_NUM_CS,          // Chip Select pin
         .queue_size = 1,                     // We only need 1 transaction in the queue
     };
 
-    // Initialize the SPI bus on SPI2_HOST
+    // Initializing the SPI bus on SPI2_HOST
     ESP_LOGI(TAG, "Initializing SPI bus...");
     ret = spi_bus_initialize(SPI2_HOST, &buscfg, SPI_DMA_CH_AUTO);
     ESP_ERROR_CHECK(ret);
 
-    // Attach the Flash device to the SPI bus
+    // Connecting the Flash device to the SPI bus
     ret = spi_bus_add_device(SPI2_HOST, &devcfg, &spi);
     ESP_ERROR_CHECK(ret);
 
-    // 3. Preparing the JEDEC ID Transaction
-    // The JEDEC ID command is 9Fh[span_4](start_span)[span_4](end_span)
-    // We send 1 byte (0x9F) and push 3 dummy bytes (0x00) to clock in the 3 response bytes.
+    // 3. 0x9F = Read JEDEC  ID 
     uint8_t tx_data[4] = {0x9F, 0x00, 0x00, 0x00};
     uint8_t rx_data[4] = {0};
 
@@ -58,8 +56,8 @@ void app_main(void)
     t.tx_buffer = tx_data;            // Data to send
     t.rx_buffer = rx_data;            // Buffer to receive data
 
-    // 4. Execute the SPI Transaction
-    ESP_LOGI(TAG, "Sending JEDEC ID command (0x9F)...");
+    // 4. The SPI Transaction Stuff
+    ESP_LOGI(TAG, "Sending JEDEC ID command (0x9F)");
     ret = spi_device_transmit(spi, &t);
     ESP_ERROR_CHECK(ret);
 
@@ -71,9 +69,9 @@ void app_main(void)
     ESP_LOGI(TAG, "Device ID: 0x%04X", dev_id);
 
     if (mfg_id == 0xEF && dev_id == 0x7016) {
-        ESP_LOGI(TAG, "W25Q32JV-IM Flash Memory successfully verified!");
+        ESP_LOGI(TAG, "Flash chip id is verified");
     } else {
-        ESP_LOGW(TAG, "ID mismatch. Please check your wiring and connections.");
+        ESP_LOGW(TAG, "ID is wrong. Please check hardware connection");
     }
 }
 
