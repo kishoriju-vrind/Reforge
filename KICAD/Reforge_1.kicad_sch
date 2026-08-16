@@ -14643,7 +14643,7 @@
 		)
 		(uuid "0502242e-852a-4257-a26e-5b698e6b07a4")
 	)
-	(label "CLK"
+	(label "CP_CLK"
 		(at 321.31 252.73 180)
 		(effects
 			(font
@@ -15263,7 +15263,7 @@
 		)
 		(uuid "3a373292-a80f-4d33-8004-3ef0ce39ee2e")
 	)
-	(label "CLK"
+	(label "CP_CLK"
 		(at 189.23 226.06 180)
 		(effects
 			(font
