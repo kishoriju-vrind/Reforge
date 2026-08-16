@@ -18377,8 +18377,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "OPEN"
-			(at 432.054 176.276 90)
+		(property "Value" "SHORT"
+			(at 432.816 176.276 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18919,7 +18919,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "4.7uF"
 			(at 508 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
