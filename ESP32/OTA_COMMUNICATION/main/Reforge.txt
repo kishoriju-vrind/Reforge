@@ -1,0 +1,3 @@
+yosys->successfully turned verilog code into logic gates 
+nextptr->mapped those gates to physical LUTs on the iCE40 chip(using only 0% of the chip's total capacity1!).
+icepack-> generated your final hardware configuration file: blink .bin 
