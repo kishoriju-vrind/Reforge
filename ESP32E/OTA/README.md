@@ -1,15 +1,14 @@
-ESP32 OTA Firmware
+# ESP32 OTA Firmware
 
-This folder contains the ESP32-side code for OTA (Over-The-Air) firmware updates.
+This folder contains the ESP32 code for OTA (Over-The-Air) firmware updates.
 
-OTA allows us to update the ESP32 firmware over the network without flashing it through USB every time.
+With OTA, we can update the firmware on the ESP32 over the network without connecting it to the computer every time.
 
-Build and Flash
+## Build and Flash
 
-Make sure ESP-IDF is installed and set up.
+Make sure ESP-IDF is installed and configured.
 
 Open this folder in VS Code or the ESP-IDF terminal and run:
 
+```bash
 idf.py build flash monitor
-
-This builds the code, flashes it to the ESP32, and opens the serial monitor.
