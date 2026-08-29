@@ -1,1 +1,2 @@
-
+iceprog vga.bin
+pause
