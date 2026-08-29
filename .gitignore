@@ -1,2 +1,14 @@
-# ESP-IDF build output
+# ESP-IDF Build Output
 **/build/
+**/managed_components/
+*.old
+sdkconfig.old
+
+# ICE40 FPGA Build Outputs
+*.json
+*.asc
+*.bin
+
+# IDE & System Files
+.vscode/
+.DS_Store
