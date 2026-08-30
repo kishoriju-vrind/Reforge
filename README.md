@@ -61,3 +61,49 @@ Reforge
 │   ├── Reforge.kicad_sch
 │   └── Reforge.kicad_pcb
 └── README.md
+## Getting Started
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/kishorju-vrind/Reforge.git
+cd Reforge
+---
+
+## System Architecture & Modules
+
+The project is divided into different functional modules. Each module handles a specific part of the system.
+
+- **FPGA Configuration Manager:** Stores multiple FPGA designs on the ESP32 and loads them onto the iCE40 FPGA.
+- **ESP32-iCE40 SPI Communication:** Handles data transfer and control between the ESP32 and iCE40 FPGA using SPI.
+- **Over-The-Air (OTA) Updates:** Allows new bitstreams and firmware to be downloaded remotely over Wi-Fi.
+- **Bitstream Transfer & CRC Check:** Transfers the FPGA configuration file in parts and checks the data for errors during transfer.
+- **Wireless Design Selection:** Allows the user to select and load the required FPGA design remotely.
+
+## Usage
+
+The following steps explain how to build and run the different parts of the project.
+
+### 1. OTA
+
+Go to the OTA directory:
+
+```bash
+cd ESP32/OTA
+
+Enter your Wi-Fi SSID and password in the required fields in the code:
+
+#define WIFI_SSID "Your_SSID"
+#define WIFI_PASS "Your_Password"
+
+Build the project using ESP-IDF:
+idf.py fullclean
+idf.py build
+
+Flash the firmware and open the serial monitor:
+idf.py flash monitor
+
+### 2.FPGA Configuration
+
