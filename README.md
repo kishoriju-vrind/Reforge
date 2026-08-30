@@ -4,6 +4,15 @@
 
 **Custom FPGA Development Board & ESP32 Host System**
 
+
+<img src="Docs/Images/PCB_Front.png" center width=700  >
+
+## **FRONT**
+
+<img src="Docs/Images/PCB_Back.png" center height= 600 width=400  >
+
+## **BACK**
+
 </div>
 
 ## Table of Contents
@@ -113,4 +122,21 @@ idf.py flash monitor
 ```
 
 ### 2.FPGA Configuration
+
+## Results
+The schematic for the custom PCB was completed. The main communication and FPGA related functions were also tested separately.
+
+The following results were achieved:
+
+- ESP32-E to ESP32-E communication
+- OTA communication and wireless FPGA configuration
+- VGA output using the iCE40 (UPduino) FPGA
+
+## Contributions
+
+## Mentors
+
+## Documentation
+
+## Acknowledgement
 
