@@ -122,9 +122,30 @@ idf.py flash monitor
 ```
 
 ### 2.FPGA Configuration
+Open the required FPGA project from the FPGA folder.
+Build the Verilog design using the provided build script:
+```
+build.bat
+```
+After building, flash the generated bitstream to the iCE40 FPGA using:
+```
+flash.bat
+```
 
+### 3. ESP32-ICE40 SPI Communication
+Open the SPI communication project from the ESP32 folder.
+Build and flash the ESP32 code using:
+```
+idf.py build flash monitor
+```
+The ESP32 then communicates with the iCE40 FPGA through SPI.
+
+### 4. bitstream Transfer and CRC Check
+
+Run the ESP32 firmware and start the firmware/bitstream transfer.
+The bitstream is transferred in smaller parts and the CRC check is used to verify the received data.
 ## Results
-The schematic for the custom PCB was completed. The main communication and FPGA related functions were also tested separately.
+The schematic and design for the custom PCB was completed. The main communication and FPGA related functions were also tested separately.
 
 The following results were achieved:
 
@@ -132,11 +153,32 @@ The following results were achieved:
 - OTA communication and wireless FPGA configuration
 - VGA output using the iCE40 (UPduino) FPGA
 
-## Contributions
+## Contributors
+
+* [Suraj Giri](https://github.com/kishorju-vrind)
+* [Amrit Tiwari](https://github.com/amrit-reboot)
 
 ## Mentors
 
-## Documentation
+* [Archit More](https://github.com/avm1234567)
+* [Harshit Bhalani](https://github.com/harshit6-b)
 
-## Acknowledgement
 
+
+## Resources
+
+- [Generating VGA with an FPGA](https://blog.waynejohnson.net/doku.php/generating_vga_with_an_fpga)
+- [FPGA and VGA Tutorial](https://youtu.be/FlkNgJXEyrc?si=HfDX1ZITgR_oPYt3)
+- [FPGA Tutorial](https://www.youtube.com/watch?v=yLNWu6AxftI)
+- [FPGA Learning Playlist](https://youtube.com/playlist?list=PLEBQazB0HUyQ5YJSdCBb79orXaR3Uk5vm&si=PIlAy49dysh-u-zc)
+- [HDLBits Problem Sets](https://hdlbits.01xz.net/wiki/Problem_sets)
+- [ESP-IDF File System Documentation](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/file-system-considerations.html)
+- [ESP32 Tutorial](https://youtu.be/MCi7dCBhVpQ?si=dbMR7HTboAvRNwoI)
+- [Shrike Documentation](https://vicharak-in.github.io/shrike/index.html)
+
+
+## Acknowledgements
+
+We are grateful to our mentors – **Harshit Bhalani** and **Archit More** – for their guidance and support throughout the course of this project.
+
+We also thank [SRA-VJTI](https://sravjti.in/) for their support in organizing [Eklavya 2026](https://eklavya.sravjti.in/) and for providing us the opportunity to work on this project.
