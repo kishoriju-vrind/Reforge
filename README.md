@@ -61,6 +61,7 @@ Reforge
 │   ├── Reforge.kicad_sch
 │   └── Reforge.kicad_pcb
 └── README.md
+```
 ## Getting Started
 
 ### Installation
@@ -70,7 +71,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/kishorju-vrind/Reforge.git
 cd Reforge
----
+```
 
 ## System Architecture & Modules
 
@@ -92,18 +93,24 @@ Go to the OTA directory:
 
 ```bash
 cd ESP32/OTA
+```
 
 Enter your Wi-Fi SSID and password in the required fields in the code:
 
+```
 #define WIFI_SSID "Your_SSID"
 #define WIFI_PASS "Your_Password"
-
+```
 Build the project using ESP-IDF:
+```
 idf.py fullclean
 idf.py build
+```
 
 Flash the firmware and open the serial monitor:
+```
 idf.py flash monitor
+```
 
 ### 2.FPGA Configuration
 
